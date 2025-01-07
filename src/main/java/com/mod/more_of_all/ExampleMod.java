@@ -35,7 +35,10 @@ public class ExampleMod
 
         // REGISTER HERE
         MinecraftForge.EVENT_BUS.register(this);
+
+
         modItems.register(modEventBus);
+
         modBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
