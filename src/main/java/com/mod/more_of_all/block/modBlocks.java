@@ -18,17 +18,21 @@ public class modBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExampleMod.MOD_ID);
 
+
+
     public static final RegistryObject<Block> THALLIUM_BLOCK = registryBlock("thallium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
 
     public static final RegistryObject<Block> TERMINITE_BLOCK = registryBlock("terminite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.LARGE_AMETHYST_BUD)));
 
+
     public static final RegistryObject<Block> RAW_TERMINITE_BLOCK = registryBlock("raw_terminite_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.LARGE_AMETHYST_BUD)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.LARGE_AMETHYST_BUD)));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){
