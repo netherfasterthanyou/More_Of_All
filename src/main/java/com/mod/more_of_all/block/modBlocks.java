@@ -2,9 +2,12 @@ package com.mod.more_of_all.block;
 
 import com.mod.more_of_all.ExampleMod;
 import com.mod.more_of_all.item.modItems;
+import com.mojang.blaze3d.shaders.Uniform;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +36,26 @@ public class modBlocks {
     public static final RegistryObject<Block> RAW_TERMINITE_BLOCK = registryBlock("raw_terminite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.LARGE_AMETHYST_BUD)));
+
+
+
+    public static final RegistryObject<Block> THALLIUM_ORE = registryBlock("thallium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+
+    public static final RegistryObject<Block> TERMINITE_ORE = registryBlock("terminite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+
+    public static final RegistryObject<Block> DEEPSLATE_TERMINITE = registryBlock("deepslate_terminite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_THALLIUM_ORE = registryBlock("deepslate_thallium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){
