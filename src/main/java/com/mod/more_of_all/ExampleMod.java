@@ -66,6 +66,15 @@ public class ExampleMod
             event.accept(modBlocks.TERMINITE_BLOCK);
             event.accept(modBlocks.RAW_TERMINITE_BLOCK);
         }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(modItems.CHISEL);
+            event.accept(modItems.BLACKSTONE_CHISEL);
+            event.accept(modItems.DEEPSLATE_CHISEL);
+            event.accept(modItems.PRISMARINE_CHISEL);
+            event.accept(modItems.SAND_CHISEL);
+            event.accept(modItems.TUFF_CHISEL);
+            event.accept(modItems.NETHER_BRICK_CHISEL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

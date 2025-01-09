@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    "*": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "#* ",
+    "#X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:deepslate_chisel"
+  }
+}

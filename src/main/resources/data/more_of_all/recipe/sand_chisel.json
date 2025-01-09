@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:sand"
+    },
+    "*": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "minecraft:red_sand"
+    }
+  },
+  "pattern": [
+    "XR ",
+    "#* ",
+    "#X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:sand_chisel"
+  }
+}

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_than_all:thallium_block"
+          "name": "more_than_all:blocks/thallium_block"
         }
       ],
       "rolls": 1.0
