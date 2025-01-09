@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_of_all:terminite"
+    },
+    "X": {
+    "item": "more_of_all:thallium"
+  }
+  },
+  "pattern": [
+    "AXA",
+    "XAX",
+    "AXA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:salvager"
+  }
+}

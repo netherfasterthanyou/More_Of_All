@@ -74,13 +74,13 @@ public class ExampleMod
             event.accept(modItems.SAND_CHISEL);
             event.accept(modItems.TUFF_CHISEL);
             event.accept(modItems.NETHER_BRICK_CHISEL);
+            event.accept(modBlocks.SALVAGER);
         }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
+    public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
 
     }

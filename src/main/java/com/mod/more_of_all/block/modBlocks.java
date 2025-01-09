@@ -1,6 +1,7 @@
 package com.mod.more_of_all.block;
 
 import com.mod.more_of_all.ExampleMod;
+import com.mod.more_of_all.block.custom.salvager;
 import com.mod.more_of_all.item.modItems;
 import com.mojang.blaze3d.shaders.Uniform;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -56,6 +57,10 @@ public class modBlocks {
     public static final RegistryObject<Block> DEEPSLATE_THALLIUM_ORE = registryBlock("deepslate_thallium_ore",
             () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SALVAGER = registryBlock("salvager",
+            () -> new salvager( BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){
