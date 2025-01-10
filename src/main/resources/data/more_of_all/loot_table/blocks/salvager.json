@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_than_all:blocks/salvager"
+          "name": "more_of_all:salvager"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_than_all:blocks/salvager"
+  "random_sequence": "more_of_all:blocks/salvager"
 }

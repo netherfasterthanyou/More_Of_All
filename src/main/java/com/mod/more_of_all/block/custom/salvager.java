@@ -1,8 +1,5 @@
 package com.mod.more_of_all.block.custom;
 
-import com.mod.more_of_all.block.modBlocks;
-import com.mod.more_of_all.item.modItems;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -60,6 +57,60 @@ public class salvager extends Block {
             if (itemEntity.getItem().getItem() == Items.DIAMOND_HORSE_ARMOR) {
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_AXE){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HOE){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HOE){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_PICKAXE) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_SWORD) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_BOOTS) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HELMET) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_CHESTPLATE) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_LEGGINGS) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HORSE_ARMOR) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_AXE){
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_PICKAXE) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_SHOVEL) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_BOOTS) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HELMET) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_CHESTPLATE) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_LEGGINGS) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.DIAMOND_HORSE_ARMOR) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }
             if (itemEntity.getItem().getItem() == Items.NETHERITE_AXE) {
                 itemEntity.setItem(new ItemStack(Items.NETHERITE_INGOT, itemEntity.getItem().getCount()));
             }
@@ -86,6 +137,36 @@ public class salvager extends Block {
             }
             if (itemEntity.getItem().getItem() == Items.NETHERITE_HELMET) {
                 itemEntity.setItem(new ItemStack(Items.NETHERITE_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_AXE) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_SHOVEL) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_SWORD) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_PICKAXE) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_HOE) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_HORSE_ARMOR) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_HELMET) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_CHESTPLATE) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_LEGGINGS) {
+                itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_BOOTS) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
             if (itemEntity.getItem().getItem() == Items.IRON_AXE) {
                 itemEntity.setItem(new ItemStack(Items.IRON_INGOT, itemEntity.getItem().getCount()));

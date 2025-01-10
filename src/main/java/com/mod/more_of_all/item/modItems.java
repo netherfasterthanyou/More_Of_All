@@ -45,6 +45,9 @@ public class modItems {
   public static final RegistryObject<Item> SAND_CHISEL = ITEMS.register("sand_chisel",
           () -> new SandChiselItem(new Item.Properties()));
 
+  public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
+          () -> new ChainSaw(new Item.Properties().durability(396)));
+
   public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);
   }

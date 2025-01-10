@@ -60,7 +60,7 @@ public class modBlocks {
 
     public static final RegistryObject<Block> SALVAGER = registryBlock("salvager",
             () -> new salvager( BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops()));
+                    .strength(2f)));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){

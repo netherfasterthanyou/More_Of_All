@@ -75,6 +75,7 @@ public class ExampleMod
             event.accept(modItems.TUFF_CHISEL);
             event.accept(modItems.NETHER_BRICK_CHISEL);
             event.accept(modBlocks.SALVAGER);
+            event.accept(modItems.CHAINSAW);
         }
     }
 

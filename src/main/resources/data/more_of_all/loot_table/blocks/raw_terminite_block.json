@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_of_all:thallium_block"
+          "name": "more_of_all:raw_terminite_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_of_all:blocks/thallium_block"
+  "random_sequence": "more_of_all:blocks/raw_terminite_block"
 }

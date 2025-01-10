@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "*": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "#* ",
+    "#* "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:chainsaw"
+  }
+}
