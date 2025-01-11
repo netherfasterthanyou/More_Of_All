@@ -10,7 +10,27 @@
   "item.more_of_all.prismarine_chisel": "Prismarine Chisel",
   "item.more_of_all.tuff_chisel": "Tuff Chisel",
   "item.more_of_all.chainsaw": "Chainsaw",
+  "item.more_of_all.rayminer": "Instant Pickaxe",
+  "item.more_of_all.chili": "Chili",
+  "item.more_of_all.dormant_starlight": "Dormant Starlight",
+  "tooltip.more_of_all.chisel.tooltip": "Use on Stone blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.blackstone_chisel.tooltip": "Use on blackstone blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.sand_chisel.tooltip": "Use on Sand blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.prismarine_chisel.tooltip": "Use on prismarine blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.deepslate_chisel.tooltip": "Use on Deepslate blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.nether_brick_chisel.tooltip": "Use on Nether Brick blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.tuff_chisel.tooltip": "Use on Tuff blocks to see what happens hold right click to cycle blocks",
+  "tooltip.more_of_all.chainsaw.tooltip": "Right click on logs leaves and vines to instantly mine them",
+  "tooltip.more_of_all.rayminer.tooltip": "Right click on any type of stone to instantly mine them",
 
+
+
+
+
+
+
+
+  "tooltip.more_of_all.salvager.tooltip": "Salvage your tools and armor by throwing them on this block",
   "block.more_of_all.salvager": "Salvager",
   "block.more_of_all.thallium_block": "Block of Thallium",
   "block.more_of_all.terminite_block": "Block of Terminite",

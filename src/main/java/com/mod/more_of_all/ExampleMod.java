@@ -59,7 +59,14 @@ public class ExampleMod
         event.accept(modItems.THALLIUM);
         event.accept(modItems.TERMINITE);
         event.accept(modItems.RAW_TERMINITE);
+        event.accept(modItems.DORMANT_STARLIGHT);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(modItems.CHILI);
+        }
+
+
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(modBlocks.THALLIUM_BLOCK);
@@ -76,6 +83,7 @@ public class ExampleMod
             event.accept(modItems.NETHER_BRICK_CHISEL);
             event.accept(modBlocks.SALVAGER);
             event.accept(modItems.CHAINSAW);
+            event.accept(modItems.RAYMINER);
         }
     }
 

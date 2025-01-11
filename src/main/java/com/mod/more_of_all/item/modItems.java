@@ -21,32 +21,41 @@ public class modItems {
   public static final RegistryObject<Item> TERMINITE = ITEMS.register("terminite",
           () -> new Item(new Item.Properties()));
 
+  public static final RegistryObject<Item> DORMANT_STARLIGHT = ITEMS.register("dormant_starlight",
+          () -> new dormantStarlight(new Item.Properties(), 90000));
+
   public static final RegistryObject<Item> RAW_TERMINITE = ITEMS.register("raw_terminite",
           () -> new Item(new Item.Properties()));
 
   public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
-          () -> new ChiselItem(new Item.Properties()));
+          () -> new ChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> NETHER_BRICK_CHISEL = ITEMS.register("nether_brick_chisel",
-          () -> new NetherBrickChiselItem(new Item.Properties()));
+          () -> new NetherBrickChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> DEEPSLATE_CHISEL = ITEMS.register("deepslate_chisel",
-          () -> new DeepslateChiselItem(new Item.Properties()));
+          () -> new DeepslateChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> TUFF_CHISEL = ITEMS.register("tuff_chisel",
-          () -> new TuffChiselItem(new Item.Properties()));
+          () -> new TuffChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> BLACKSTONE_CHISEL = ITEMS.register("blackstone_chisel",
-          () -> new BlackStoneChiselItem(new Item.Properties()));
+          () -> new BlackStoneChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> PRISMARINE_CHISEL = ITEMS.register("prismarine_chisel",
-          () -> new PrismarineChiselItem(new Item.Properties()));
+          () -> new PrismarineChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> SAND_CHISEL = ITEMS.register("sand_chisel",
-          () -> new SandChiselItem(new Item.Properties()));
+          () -> new SandChiselItem(new Item.Properties().stacksTo(1)));
 
   public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
-          () -> new ChainSaw(new Item.Properties().durability(396)));
+          () -> new ChainSaw(new Item.Properties().durability(296).stacksTo(1)));
+
+  public static final RegistryObject<Item> CHILI = ITEMS.register("chili",
+          () -> new Item(new Item.Properties().food(FoodProperties.CHILI)));
+
+  public static final RegistryObject<Item> RAYMINER = ITEMS.register("rayminer",
+          () -> new rayminer(new Item.Properties().durability(1000001).stacksTo(1)));
 
   public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);

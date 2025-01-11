@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "more_of_all:terminite_block"
+      "item": "more_of_all:coal_block"
     },
     "X": {
-    "item": "more_of_all:thallium_block"
+    "item": "more_of_all:thallium"
   }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "more_of_all:salvager"
+    "id": "more_of_all:dormant_starlight"
   }
 }
