@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "terminite",
+  "ingredient": {
+    "item": "more_of_all:deepslate_terminite_ore"
+  },
+  "result": {
+    "id": "more_of_all:terminite"
+  }
+}

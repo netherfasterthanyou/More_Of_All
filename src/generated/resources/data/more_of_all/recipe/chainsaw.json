@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:yellow_concrete"
+    }
+  },
+  "pattern": [
+    " SS",
+    "XSA",
+    "XXA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:chainsaw"
+  }
+}

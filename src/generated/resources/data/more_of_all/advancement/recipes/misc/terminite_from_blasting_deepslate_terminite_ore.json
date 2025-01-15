@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_terminite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_of_all:deepslate_terminite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_of_all:terminite_from_blasting_deepslate_terminite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_terminite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_of_all:terminite_from_blasting_deepslate_terminite_ore"
+    ]
+  }
+}

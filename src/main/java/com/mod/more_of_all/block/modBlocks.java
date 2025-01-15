@@ -50,7 +50,7 @@ public class modBlocks {
                     .strength(4f).requiresCorrectToolForDrops()));
 
 
-    public static final RegistryObject<Block> DEEPSLATE_TERMINITE = registryBlock("deepslate_terminite_ore",
+    public static final RegistryObject<Block> DEEPSLATE_TERMINITE_ORE = registryBlock("deepslate_terminite_ore",
             () -> new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops()));
 

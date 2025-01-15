@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:rayminer"
+  }
+}

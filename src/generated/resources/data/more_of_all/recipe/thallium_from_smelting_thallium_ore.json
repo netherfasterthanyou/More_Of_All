@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "thallium",
+  "ingredient": {
+    "item": "more_of_all:thallium_ore"
+  },
+  "result": {
+    "id": "more_of_all:thallium"
+  }
+}

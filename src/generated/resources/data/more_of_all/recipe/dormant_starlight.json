@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_of_all:thallium"
+    },
+    "X": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "AAA",
+    "XAX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:dormant_starlight"
+  }
+}

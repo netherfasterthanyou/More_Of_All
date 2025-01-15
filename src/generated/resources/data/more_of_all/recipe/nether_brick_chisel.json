@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:nether_brick"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "SA ",
+    "AX ",
+    "SA "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:nether_brick_chisel"
+  }
+}
