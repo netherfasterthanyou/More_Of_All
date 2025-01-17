@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "terminite",
+  "key": {
+    "#": {
+      "item": "more_of_all:terminite"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "more_of_all:terminite_door"
+  }
+}

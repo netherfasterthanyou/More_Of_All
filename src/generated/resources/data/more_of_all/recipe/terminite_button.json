@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "terminite",
+  "ingredients": [
+    {
+      "item": "more_of_all:terminite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:terminite_button"
+  }
+}

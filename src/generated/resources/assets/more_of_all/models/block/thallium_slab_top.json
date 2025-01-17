@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "more_of_all:block/thallium_block",
+    "side": "more_of_all:block/thallium_block",
+    "top": "more_of_all:block/thallium_block"
+  }
+}

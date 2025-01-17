@@ -35,6 +35,37 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(modBlocks.THALLIUM_BLOCK.get());
         dropSelf(modBlocks.SALVAGER.get());
 
+
+        dropSelf(modBlocks.TERMINITE_BUTTON.get());
+        dropSelf(modBlocks.TERMINITE_FENCE.get());
+        dropSelf(modBlocks.TERMINITE_WALL.get());
+        dropSelf(modBlocks.TERMINITE_STAIRS.get());
+        dropSelf(modBlocks.TERMINITE_PRESSURE_PLATE.get());
+        dropSelf(modBlocks.TERMINITE_TRAP_DOOR.get());
+        dropSelf(modBlocks.TERMINITE_FENCE_GATE.get());
+        this.add(modBlocks.TERMINITE_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.TERMINITE_SLAB.get()));
+
+        this.add(modBlocks.TERMINITE_DOOR.get(),
+                block -> createDoorTable(modBlocks.TERMINITE_DOOR.get()));
+
+        dropSelf(modBlocks.THALLIUM_BUTTON.get());
+        dropSelf(modBlocks.THALLIUM_FENCE.get());
+        dropSelf(modBlocks.THALLIUM_FENCE_GATE.get());
+        dropSelf(modBlocks.THALLIUM_WALL.get());
+        dropSelf(modBlocks.THALLIUM_TRAP_DOOR.get());
+        dropSelf(modBlocks.THALLIUM_PRESSURE_PLATE.get());
+        dropSelf(modBlocks.THALLIUM_STAIRS.get());
+
+        dropSelf(modBlocks.THALLIUM_LAMP.get());
+        dropSelf(modBlocks.TERMINITE_LAMP.get());
+
+        this.add(modBlocks.THALLIUM_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.THALLIUM_SLAB.get()));
+        this.add(modBlocks.THALLIUM_DOOR.get(),
+                block -> createDoorTable(modBlocks.THALLIUM_DOOR.get()));
+
+
         this.add(modBlocks.TERMINITE_ORE.get(),
                 block -> createOreDrop(modBlocks.TERMINITE_ORE.get(), modItems.RAW_TERMINITE.get()));
         this.add(modBlocks.DEEPSLATE_TERMINITE_ORE.get(),

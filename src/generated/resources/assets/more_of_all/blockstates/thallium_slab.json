@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_of_all:block/thallium_slab"
+    },
+    "type=double": {
+      "model": "more_of_all:block/thallium_block"
+    },
+    "type=top": {
+      "model": "more_of_all:block/thallium_slab_top"
+    }
+  }
+}

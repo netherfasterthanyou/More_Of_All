@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "more_of_all:block/terminite_block",
+    "side": "more_of_all:block/terminite_block",
+    "top": "more_of_all:block/terminite_block"
+  }
+}

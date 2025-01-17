@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "more_of_all:block/terminite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "more_of_all:block/terminite_lamp_on"
+    }
+  }
+}

@@ -146,6 +146,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.TERMINITE_LAMP.get())
+                .pattern("   ")
+                .pattern("AX ")
+                .pattern("   ")
+                .define('X', modItems.TERMINITE.get())
+                .define('A', Items.GLOWSTONE)
+
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.THALLIUM_LAMP.get())
+                .pattern("   ")
+                .pattern("AX ")
+                .pattern("   ")
+                .define('X', modItems.THALLIUM.get())
+                .define('A', Items.GLOWSTONE)
+
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+
 
 
 
@@ -170,7 +189,55 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        stairBuilder(modBlocks.TERMINITE_STAIRS.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                        .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
 
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.TERMINITE_SLAB.get(), modItems.TERMINITE.get());
+
+        fenceBuilder(modBlocks.TERMINITE_FENCE.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(modBlocks.TERMINITE_FENCE_GATE.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.TERMINITE_WALL.get(), modItems.TERMINITE.get());
+
+        buttonBuilder(modBlocks.TERMINITE_BUTTON.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, modBlocks.TERMINITE_PRESSURE_PLATE.get(), modItems.TERMINITE.get());
+
+        doorBuilder(modBlocks.TERMINITE_DOOR.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(modBlocks.TERMINITE_TRAP_DOOR.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+
+
+        stairBuilder(modBlocks.THALLIUM_STAIRS.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.THALLIUM_SLAB.get(), modItems.THALLIUM.get());
+
+        fenceBuilder(modBlocks.THALLIUM_FENCE.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(modBlocks.THALLIUM_FENCE_GATE.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.THALLIUM_WALL.get(), modItems.THALLIUM.get());
+
+        buttonBuilder(modBlocks.THALLIUM_BUTTON.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, modBlocks.THALLIUM_PRESSURE_PLATE.get(), modItems.THALLIUM.get());
+
+        doorBuilder(modBlocks.THALLIUM_DOOR.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(modBlocks.THALLIUM_TRAP_DOOR.get(), Ingredient.of(modItems.THALLIUM.get())).group("thallium")
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
 
 
 

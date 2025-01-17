@@ -75,6 +75,29 @@ public class ExampleMod
             event.accept(modBlocks.THALLIUM_BLOCK);
             event.accept(modBlocks.TERMINITE_BLOCK);
             event.accept(modBlocks.RAW_TERMINITE_BLOCK);
+            event.accept(modBlocks.TERMINITE_BUTTON);
+            event.accept(modBlocks.TERMINITE_DOOR);
+            event.accept(modBlocks.TERMINITE_SLAB);
+            event.accept(modBlocks.TERMINITE_FENCE_GATE);
+            event.accept(modBlocks.TERMINITE_WALL);
+            event.accept(modBlocks.TERMINITE_FENCE);
+            event.accept(modBlocks.TERMINITE_PRESSURE_PLATE);
+            event.accept(modBlocks.TERMINITE_TRAP_DOOR);
+            event.accept(modBlocks.TERMINITE_STAIRS);
+
+            event.accept(modBlocks.THALLIUM_FENCE);
+            event.accept(modBlocks.THALLIUM_DOOR);
+            event.accept(modBlocks.THALLIUM_BUTTON);
+            event.accept(modBlocks.THALLIUM_SLAB);
+            event.accept(modBlocks.THALLIUM_FENCE_GATE);
+            event.accept(modBlocks.THALLIUM_WALL);
+            event.accept(modBlocks.THALLIUM_PRESSURE_PLATE);
+            event.accept(modBlocks.THALLIUM_TRAP_DOOR);
+            event.accept(modBlocks.THALLIUM_STAIRS);
+
+            event.accept(modBlocks.TERMINITE_LAMP);
+            event.accept(modBlocks.THALLIUM_LAMP);
+
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(modItems.CHISEL);
