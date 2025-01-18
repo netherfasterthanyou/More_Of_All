@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#more_of_all:needs_thallium_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ]
+}

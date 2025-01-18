@@ -2,9 +2,12 @@ package com.mod.more_of_all.datagen;
 
 import com.mod.more_of_all.ExampleMod;
 import com.mod.more_of_all.block.modBlocks;
+import com.mod.more_of_all.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -58,5 +61,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(modBlocks.THALLIUM_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(modBlocks.THALLIUM_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(modBlocks.THALLIUM_WALL.get());
+
+
+        tag(ModTags.Blocks.NEEDS_THALLIUM_TOOL)
+                .add(Blocks.OBSIDIAN)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.NEEDS_TERMINITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+
+        tag(ModTags.Blocks.INCORRECT_FOR_THALLIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_THALLIUM_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_TERMINITE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_TERMINITE_TOOL);
     }
 }

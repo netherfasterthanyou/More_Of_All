@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-16T08:12:59.8605891	Item Models: more_of_all
+// 1.21.1	2025-01-17T16:10:19.670222	Item Models: more_of_all
 ec86424f2576787433a0664d7ce069c6dd9438c5 assets/more_of_all/models/item/blackstone_chisel.json
 e56b53544080fe1cbac0f821113e344eef634bd3 assets/more_of_all/models/item/chainsaw.json
 48e3b47b0a11dc0feda8cf573b57e4efd88a83a8 assets/more_of_all/models/item/chili.json
@@ -11,15 +11,25 @@ e56b53544080fe1cbac0f821113e344eef634bd3 assets/more_of_all/models/item/chainsaw
 96c9be63e6ebf53ff5005a27fea82d9aa44060c5 assets/more_of_all/models/item/rayminer.json
 15dae406a8c664f2f583d73c08e57490f27e5b39 assets/more_of_all/models/item/sand_chisel.json
 7dae0e01d9dae822868c8602be6c88fae83a1d3a assets/more_of_all/models/item/terminite.json
+cca2443a412913fb1c49395d79a7cab6f8a1394f assets/more_of_all/models/item/terminite_axe.json
 6f8c3af50f047da28cd1dcf9a9acb1ddac35db24 assets/more_of_all/models/item/terminite_button.json
 ba25bb3d3df03971576dc2127103d70118796b55 assets/more_of_all/models/item/terminite_door.json
 200cb69932fb4cebdbd0df356654f2dc87b5ae7c assets/more_of_all/models/item/terminite_fence.json
+f8c3f8ce2d09cac104221ab5256a5287a1c9fe89 assets/more_of_all/models/item/terminite_hoe.json
+fc8077a3610f807df0acf5950897da82b1a72051 assets/more_of_all/models/item/terminite_pickaxe.json
+4200ec22da0179512acc0a0812c0d8e20163f30d assets/more_of_all/models/item/terminite_shovel.json
+3e12385410230904543486715cf8feca5557796f assets/more_of_all/models/item/terminite_sword.json
 1d8c5cf4fb0ac5e123c417a277c48ba443dbedc3 assets/more_of_all/models/item/terminite_trapdoor.json
 9b931c5461573b18396139369ded3429819cb9e1 assets/more_of_all/models/item/terminite_wall.json
 74a354a7c440488dfaddee6c06d7d44502fa9177 assets/more_of_all/models/item/thallium.json
+2216d959ceb30b868154bf852dc02d7e5aae4930 assets/more_of_all/models/item/thallium_axe.json
 f4ccf39336ab171f530cccbffaf54a4990bad23f assets/more_of_all/models/item/thallium_button.json
 d61828423571a11c7f4d7cc22f5fbab9b6518547 assets/more_of_all/models/item/thallium_door.json
 e6ec4fba8e7b2dfa8c56c58d357d8a57e4d8e71d assets/more_of_all/models/item/thallium_fence.json
+15aac87f9ec44dadf171649e96e6aaa0c4d18951 assets/more_of_all/models/item/thallium_hoe.json
+130013ace974a862e3eac59879cb29eed9ad9b21 assets/more_of_all/models/item/thallium_pickaxe.json
+0ef30a5db088bdb8226333f64bd97f235cf5e24e assets/more_of_all/models/item/thallium_shovel.json
+5fb4b46815060e17b891bd40b0b229b62598b2f9 assets/more_of_all/models/item/thallium_sword.json
 00192be4985f77db967609e077a239cc019524b0 assets/more_of_all/models/item/thallium_trapdoor.json
 3f485611a079e40d2cdacf4fed54862451efb757 assets/more_of_all/models/item/thallium_wall.json
 67929a80c33ed6c9d7e7b8eea0c0472507ba6489 assets/more_of_all/models/item/tuff_chisel.json

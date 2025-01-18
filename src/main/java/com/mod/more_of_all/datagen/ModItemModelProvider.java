@@ -5,11 +5,10 @@ import com.mod.more_of_all.block.modBlocks;
 import com.mod.more_of_all.item.modItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -48,7 +47,30 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(modBlocks.TERMINITE_TRAP_DOOR);
         simpleBlockItem(modBlocks.THALLIUM_TRAP_DOOR);
 
+
+
+
+
+        handheldItem(modItems.TERMINITE_SWORD);
+        handheldItem(modItems.TERMINITE_PICKAXE);
+        handheldItem(modItems.TERMINITE_AXE);
+        handheldItem(modItems.TERMINITE_SHOVEL);
+        handheldItem(modItems.TERMINITE_HOE);
+        handheldItem(modItems.THALLIUM_HOE);
+        handheldItem(modItems.THALLIUM_PICKAXE);
+        handheldItem(modItems.THALLIUM_AXE);
+        handheldItem(modItems.THALLIUM_SWORD);
+        handheldItem(modItems.THALLIUM_SHOVEL);
     }
+    private void handheldItem(RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+
+
+
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
         String blockPath = block.getId().getPath();
         String baseBlockPath = baseBlock.getId().getPath();

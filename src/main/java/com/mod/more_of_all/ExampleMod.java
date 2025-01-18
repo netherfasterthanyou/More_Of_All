@@ -110,6 +110,19 @@ public class ExampleMod
             event.accept(modBlocks.SALVAGER);
             event.accept(modItems.CHAINSAW);
             event.accept(modItems.RAYMINER);
+            event.accept(modItems.TERMINITE_SHOVEL);
+            event.accept(modItems.TERMINITE_PICKAXE);
+            event.accept(modItems.TERMINITE_HOE);
+            event.accept(modItems.THALLIUM_HOE);
+            event.accept(modItems.THALLIUM_SHOVEL);
+            event.accept(modItems.THALLIUM_PICKAXE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(modItems.TERMINITE_SWORD);
+            event.accept(modItems.TERMINITE_AXE);
+            event.accept(modItems.THALLIUM_SWORD);
+            event.accept(modItems.THALLIUM_AXE);
+
         }
     }
 

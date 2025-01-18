@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#more_of_all:needs_terminite_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

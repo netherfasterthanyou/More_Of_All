@@ -1,6 +1,10 @@
-// 1.21.1	2025-01-16T15:47:30.7894223	Tags for minecraft:block mod id more_of_all
+// 1.21.1	2025-01-17T15:54:29.8368216	Tags for minecraft:block mod id more_of_all
 be598b0a5dd89c09a464311136fcf5d48a3e824b data/minecraft/tags/block/fences.json
 5b2c27413b53d1bcb5dcd91bfc8b2b7dc7d3e204 data/minecraft/tags/block/fence_gates.json
 9b34c251fd0d92cc7b080cb6e9cadc55e8843b24 data/minecraft/tags/block/mineable/pickaxe.json
 1df1ec6f141902afed9398dde9f93735d9fb74bc data/minecraft/tags/block/needs_iron_tool.json
 14c090ed00d25d3cf76fe1f0bde92be8ca7e1d7a data/minecraft/tags/block/walls.json
+b5d18432c272bbbb9208340d2d98414cc46a2161 data/more_of_all/tags/block/incorrect_for_terminite_tool.json
+9f72baf88c4e4592285d3b0b0cfe1ece49bc3577 data/more_of_all/tags/block/incorrect_for_thallium_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/more_of_all/tags/block/needs_terminite_tool.json
+3f6b8bf958e38d2ba5ca4e089b848d89eddca410 data/more_of_all/tags/block/needs_thallium_tool.json
