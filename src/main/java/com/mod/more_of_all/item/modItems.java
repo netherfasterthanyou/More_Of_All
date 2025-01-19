@@ -3,6 +3,7 @@ package com.mod.more_of_all.item;
 
 import com.mod.more_of_all.ExampleMod;
 import com.mod.more_of_all.item.custom.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -59,11 +60,11 @@ public class modItems {
 
   public static final RegistryObject<Item> TERMINITE_SWORD = ITEMS.register("terminite_sword",
           () -> new SwordItem(ModToolTiers.TERMINITE, new Item.Properties()
-                  .attributes(SwordItem.createAttributes(ModToolTiers.TERMINITE, 3, (float) -2.4))));
+                  .attributes(SwordItem.createAttributes(ModToolTiers.TERMINITE,  2, (float) -2.4))));
 
   public static final RegistryObject<Item> TERMINITE_AXE = ITEMS.register("terminite_axe",
           () -> new AxeItem(ModToolTiers.TERMINITE, new Item.Properties()
-                  .attributes(AxeItem.createAttributes(ModToolTiers.TERMINITE, 6, (float) -3.2))));
+                  .attributes(AxeItem.createAttributes(ModToolTiers.TERMINITE, 3.5f, (float) -3.2))));
 
   public static final RegistryObject<Item> TERMINITE_SHOVEL = ITEMS.register("terminite_shovel",
           () -> new ShovelItem(ModToolTiers.TERMINITE, new Item.Properties()
@@ -80,11 +81,11 @@ public class modItems {
 
   public static final RegistryObject<Item> THALLIUM_SWORD = ITEMS.register("thallium_sword",
           () -> new SwordItem(ModToolTiers.THALLIUM, new Item.Properties()
-                  .attributes(SwordItem.createAttributes(ModToolTiers.THALLIUM, 3, (float) -2.4))));
+                  .attributes(SwordItem.createAttributes(ModToolTiers.THALLIUM, 2, (float) -2.4))));
 
   public static final RegistryObject<Item> THALLIUM_AXE = ITEMS.register("thallium_axe",
           () -> new AxeItem(ModToolTiers.THALLIUM, new Item.Properties()
-                  .attributes(AxeItem.createAttributes(ModToolTiers.THALLIUM, 6, (float) -3.2))));
+                  .attributes(AxeItem.createAttributes(ModToolTiers.THALLIUM, 3.5f, (float) -3.2))));
 
   public static final RegistryObject<Item> THALLIUM_SHOVEL = ITEMS.register("thallium_shovel",
           () -> new ShovelItem(ModToolTiers.THALLIUM, new Item.Properties()
@@ -96,7 +97,52 @@ public class modItems {
 
   public static final RegistryObject<Item> THALLIUM_HOE = ITEMS.register("thallium_hoe",
           () -> new HoeItem(ModToolTiers.THALLIUM, new Item.Properties()
-                  .attributes(HoeItem.createAttributes(ModToolTiers.THALLIUM, 0, (float) -3))));
+                  .attributes(HoeItem.createAttributes(ModToolTiers.THALLIUM, 0, (float) -1.6))));
+
+  public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
+          () -> new HammerItem(ModToolTiers.TERMINITE, new Item.Properties()
+                  .attributes(AxeItem.createAttributes(ModToolTiers.THALLIUM, 8, (float) -3.1))));
+
+  public static final RegistryObject<Item> TERMINITE_HELMET = ITEMS.register("terminite_helmet",
+          () -> new ModArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                  new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25))));
+  public static final RegistryObject<Item> TERMINITE_CHESTPLATE = ITEMS.register("terminite_chestplate",
+          () -> new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                  new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))));
+  public static final RegistryObject<Item> TERMINITE_LEGGINGS = ITEMS.register("terminite_leggings",
+          () -> new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                  new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25))));
+  public static final RegistryObject<Item> TERMINITE_BOOTS = ITEMS.register("terminite_boots",
+          () -> new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                  new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))));
+
+
+
+  public static final RegistryObject<Item> THALLIUM_HELMET = ITEMS.register("thallium_helmet",
+          () -> new ModArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                  new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(23))));
+  public static final RegistryObject<Item> THALLIUM_CHESTPLATE = ITEMS.register("thallium_chestplate",
+          () -> new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                  new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(23))));
+  public static final RegistryObject<Item> THALLIUM_LEGGINGS = ITEMS.register("thallium_leggings",
+          () -> new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                  new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(23))));
+  public static final RegistryObject<Item> THALLIUM_BOOTS = ITEMS.register("thallium_boots",
+          () -> new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                  new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(23))));
+
+
+  public static final RegistryObject<Item> TERMINITE_HORSE_ARMOR = ITEMS.register("terminite_horse_armor",
+          () -> new AnimalArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                  false, new Item.Properties().stacksTo(1)));
+
+  public static final RegistryObject<Item> THALLIUM_HORSE_ARMOR = ITEMS.register("thallium_horse_armor",
+          () -> new AnimalArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                  false, new Item.Properties().stacksTo(1)));
+
+  public static final RegistryObject<Item> TRACK_SMITHING_TEMPLATE = ITEMS.register("track_armor_trim_smithing_template",
+          () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "track")));
+
 
   public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);

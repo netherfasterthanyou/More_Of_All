@@ -6,6 +6,7 @@ import com.mod.more_of_all.item.modItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -71,6 +72,61 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TERMINITE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', modItems.TERMINITE.get())
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TERMINITE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', modItems.TERMINITE.get())
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TERMINITE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', modItems.TERMINITE.get())
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TERMINITE_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', modItems.TERMINITE.get())
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', modItems.THALLIUM.get())
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', modItems.THALLIUM.get())
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', modItems.THALLIUM.get())
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', modItems.THALLIUM.get())
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_SWORD.get())
                 .pattern(" A ")
                 .pattern(" A ")
@@ -114,7 +170,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
-
+        trimSmithing(pRecipeOutput, modItems.TRACK_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "track"));
 
 
 

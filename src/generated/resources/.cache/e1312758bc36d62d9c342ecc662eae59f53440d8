@@ -1,2 +1,9 @@
-// 1.21.1	2025-01-14T17:44:10.5072565	Tags for minecraft:item mod id more_of_all
-8a1a892efbaa6f74be34242ed05a14556cda5822 data/more_of_all/tags/item/transformable_items.json
+// 1.21.1	2025-01-18T18:19:07.4724933	Tags for minecraft:item mod id more_of_all
+64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/enchantable/armor.json
+c28967f57eb02ef0082d3b6f87bdcb740fe05806 data/minecraft/tags/item/enchantable/mining.json
+8a7f8e3d56e9c4abc2fff5ff5d246ee3c42fe578 data/minecraft/tags/item/enchantable/sharp_weapon.json
+ec5c6c0ae5ce6af8473a670d5494e7be70edb5d4 data/minecraft/tags/item/enchantable/sword.json
+64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/trimmable_armor.json
+e5f5c396af1b12f3bcec9401e6b09d86878abe36 data/minecraft/tags/item/trim_materials.json
+c95a9dc6d1c6d917cf9aacad38b7935a04f9f107 data/minecraft/tags/item/trim_templates.json
+a1ae172dcc355d79fbfb1caba5e64e08fcd71416 data/more_of_all/tags/item/transformable_items.json

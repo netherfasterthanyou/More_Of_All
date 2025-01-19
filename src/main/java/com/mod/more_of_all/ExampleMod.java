@@ -63,6 +63,7 @@ public class ExampleMod
         event.accept(modItems.TERMINITE);
         event.accept(modItems.RAW_TERMINITE);
         event.accept(modItems.DORMANT_STARLIGHT);
+        event.accept(modItems.TRACK_SMITHING_TEMPLATE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
@@ -116,12 +117,27 @@ public class ExampleMod
             event.accept(modItems.THALLIUM_HOE);
             event.accept(modItems.THALLIUM_SHOVEL);
             event.accept(modItems.THALLIUM_PICKAXE);
+            event.accept(modItems.HAMMER);
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(modItems.TERMINITE_SWORD);
             event.accept(modItems.TERMINITE_AXE);
             event.accept(modItems.THALLIUM_SWORD);
             event.accept(modItems.THALLIUM_AXE);
+            event.accept(modItems.HAMMER);
+            event.accept(modItems.THALLIUM_CHESTPLATE);
+            event.accept(modItems.THALLIUM_LEGGINGS);
+            event.accept(modItems.THALLIUM_HELMET);
+            event.accept(modItems.THALLIUM_BOOTS);
+
+            event.accept(modItems.TERMINITE_HELMET);
+            event.accept(modItems.TERMINITE_CHESTPLATE);
+            event.accept(modItems.TERMINITE_LEGGINGS);
+            event.accept(modItems.TERMINITE_BOOTS);
+
+            event.accept(modItems.TERMINITE_HORSE_ARMOR);
+            event.accept(modItems.THALLIUM_HORSE_ARMOR);
+
 
         }
     }

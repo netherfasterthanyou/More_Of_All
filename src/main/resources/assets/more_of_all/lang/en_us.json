@@ -60,6 +60,24 @@
   "item.more_of_all.thallium_axe": "Thallium Axe",
   "item.more_of_all.thallium_pickaxe": "Thallium Pickaxe",
   "item.more_of_all.thallium_sword": "Thallium Sword",
+  "item.more_of_all.hammer": "Hammer",
+
+
+  "item.more_of_all.thallium_helmet": "Thallium Helmet",
+  "item.more_of_all.thallium_chestplate": "Thallium Chestplate",
+  "item.more_of_all.thallium_leggings": "Thallium Leggings",
+  "item.more_of_all.thallium_boots": "Thallium Boots",
+  "item.more_of_all.track_armor_trim_smithing_template": "Smithing Template",
+
+
+  "item.more_of_all.terminite_helmet": "Terminite Helmet",
+  "item.more_of_all.terminite_chestplate": "Terminite Chestplate",
+  "item.more_of_all.terminite_leggings": "Terminite Leggings",
+  "item.more_of_all.terminite_boots": "Terminite Boots",
+
+
+  "item.more_of_all.terminite_horse_armor": "Terminite Horse Armor",
+  "item.more_of_all.thallium_horse_armor": "Thallium Horse Armor",
 
 
 
@@ -76,5 +94,10 @@
   "block.more_of_all.thallium_ore": "Thallium Ore",
   "block.more_of_all.terminite_ore": "Terminite Ore",
   "block.more_of_all.deepslate_terminite_ore": "Deepslate Terminite Ore",
-  "block.more_of_all.deepslate_thallium_ore": "Deepslate Thallium Ore"
+  "block.more_of_all.deepslate_thallium_ore": "Deepslate Thallium Ore",
+
+
+  "trim_pattern.more_of_all.track": "Track Armor Trim",
+  "trim_material.more_of_all.terminite": "Terminite Material",
+  "trim_material.more_of_all.thallium": "Terminite Material"
 }
