@@ -2,6 +2,7 @@ package com.mod.more_of_all.item;
 
 
 import com.mod.more_of_all.ExampleMod;
+import com.mod.more_of_all.block.modBlocks;
 import com.mod.more_of_all.item.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -100,8 +101,8 @@ public class modItems {
                   .attributes(HoeItem.createAttributes(ModToolTiers.THALLIUM, 0, (float) -1.6))));
 
   public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
-          () -> new HammerItem(ModToolTiers.TERMINITE, new Item.Properties()
-                  .attributes(AxeItem.createAttributes(ModToolTiers.THALLIUM, 8, (float) -3.1))));
+          () -> new HammerItem(ModToolTiers.HAMMER, new Item.Properties()
+                  .attributes(AxeItem.createAttributes(ModToolTiers.HAMMER, 8, (float) -3.1))));
 
   public static final RegistryObject<Item> TERMINITE_HELMET = ITEMS.register("terminite_helmet",
           () -> new ModArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -117,6 +118,9 @@ public class modItems {
                   new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))));
 
 
+  public static final RegistryObject<Item> CHILI_SEEDS = ITEMS.register("chili_seeds",
+          () -> new ItemNameBlockItem(modBlocks.CHILI_CROP.get(), new Item.Properties()));
+
 
   public static final RegistryObject<Item> THALLIUM_HELMET = ITEMS.register("thallium_helmet",
           () -> new ModArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -130,6 +134,15 @@ public class modItems {
   public static final RegistryObject<Item> THALLIUM_BOOTS = ITEMS.register("thallium_boots",
           () -> new ArmorItem(ModArmorMaterials.THALLIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                   new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(23))));
+  public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries",
+          () -> new ItemNameBlockItem(modBlocks.BLUEBERRY_BUSH.get(), new Item.Properties().food(FoodProperties.BLUEBERRIES)));
+
+
+  public static final RegistryObject<Item> TERMINITE_BOW = ITEMS.register("terminite_bow",
+          () -> new BowItem(new Item.Properties().durability(783).stacksTo(1)));
+
+  public static final RegistryObject<Item> THALLIUM_BOW = ITEMS.register("thallium_bow",
+          () -> new BowItem(new Item.Properties().durability(723).stacksTo(1)));
 
 
   public static final RegistryObject<Item> TERMINITE_HORSE_ARMOR = ITEMS.register("terminite_horse_armor",

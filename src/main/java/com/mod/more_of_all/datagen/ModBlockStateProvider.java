@@ -1,18 +1,23 @@
 package com.mod.more_of_all.datagen;
 
 import com.mod.more_of_all.ExampleMod;
+import com.mod.more_of_all.block.custom.BlueBerryBushBlock;
+import com.mod.more_of_all.block.custom.ChiliCropBlock;
 import com.mod.more_of_all.block.custom.Terminite_Lamp;
 import com.mod.more_of_all.block.custom.Thallium_Lamp;
 import com.mod.more_of_all.block.modBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper){
@@ -72,7 +77,43 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.THALLIUM_TRAP_DOOR, "bottom");
 
         customLamp();
+
+
+        makeCrop(((CropBlock) modBlocks.CHILI_CROP.get()), "chili_crop_stage", "chili_crop_stage");
+        makeBush(((SweetBerryBushBlock) modBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");
     }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((ChiliCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "block/" + textureName + state.getValue(((ChiliCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(BlueBerryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "block/" + textureName + state.getValue(BlueBerryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
+    }
+
+
+
 
     private void customLamp(){
         getVariantBuilder(modBlocks.TERMINITE_LAMP.get()).forAllStates(state -> {

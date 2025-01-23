@@ -60,6 +60,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(modItems.PRISMARINE_CHISEL.get());
         basicItem(modItems.TUFF_CHISEL.get());
         basicItem(modItems.CHILI.get());
+        basicItem(modItems.BLUEBERRIES.get());
+        basicItem(modItems.CHILI_SEEDS.get());
 
         basicItem(modItems.TERMINITE_HORSE_ARMOR.get());
         basicItem(modItems.THALLIUM_HORSE_ARMOR.get());

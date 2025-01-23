@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-18T18:19:07.4862558	Recipes
+// 1.21.1	2025-01-19T11:37:03.3015453	Recipes
 c1664412665e14dbba5f94f10644c7052bcacbe4 data/more_of_all/advancement/recipes/building_blocks/terminite_slab.json
 a8472b3ec4fe38d0e9cf524ed4e8e62ad379b010 data/more_of_all/advancement/recipes/building_blocks/terminite_stairs.json
 9ad8d24246dee9ca5bd44e2b29d9503591ebf736 data/more_of_all/advancement/recipes/building_blocks/terminite_wall.json
@@ -12,10 +12,11 @@ aecf0582b372cfdef1b1bafe122e4a640bf32ff2 data/more_of_all/advancement/recipes/de
 389f6954c65c8e257a5f4cd9abae9a452a7d05b5 data/more_of_all/advancement/recipes/misc/chisel.json
 a142e754e463d942be47e624580719417083ed44 data/more_of_all/advancement/recipes/misc/deepslate_chisel.json
 8219dbf6a6f6fff054148e844641544c6035b4b4 data/more_of_all/advancement/recipes/misc/dormant_starlight.json
+1fce8c1586a1c9c616526b18fe991c0d1d27369c data/more_of_all/advancement/recipes/misc/hammer.json
 434fbcfff8762065583efeed663924e04d6a4f2d data/more_of_all/advancement/recipes/misc/nether_brick_chisel.json
 18dc4206d7b3fa366bd2a5a3e68fd2632d629ee8 data/more_of_all/advancement/recipes/misc/prismarine_chisel.json
 9c52d6b73c601b3e4b4c8093db100a8bc0b347fe data/more_of_all/advancement/recipes/misc/raw_terminite.json
-995b99e5075f862f14a3f3d2d55f4fea696057bf data/more_of_all/advancement/recipes/misc/raw_terminite_block.json
+e00edfff5fe8075f44e2a7307e086ce74eee2d0c data/more_of_all/advancement/recipes/misc/raw_terminite_block.json
 7848d838059b6347b678e76acbe0cbf6f675616c data/more_of_all/advancement/recipes/misc/rayminer.json
 31930a66efded3bf8fde3e5f51b3c99d679a7841 data/more_of_all/advancement/recipes/misc/salvager.json
 bc7e2d589c6a7c271c05c1ef497c4b3a4624b9bf data/more_of_all/advancement/recipes/misc/sand_chisel.json
@@ -70,6 +71,7 @@ f36aa2b80e28a8327744d3323f3a3871a91c38b2 data/more_of_all/recipe/blackstone_chis
 7ed5498913c7557b8e008bda68a71bdf7ab0020e data/more_of_all/recipe/chisel.json
 54376e077f74aade471f649bb7b6e8fc63f7d525 data/more_of_all/recipe/deepslate_chisel.json
 56dec15d639fd36d815f4ecb6d819417c7243d0b data/more_of_all/recipe/dormant_starlight.json
+a8739988cb0ab8b076ad2dfd54a508c2a249cf26 data/more_of_all/recipe/hammer.json
 17831037974c9f902c531ea9aa8a08c4058f60b9 data/more_of_all/recipe/nether_brick_chisel.json
 094622b08a882d93f0726ef2f3ab4d92fd43ef7d data/more_of_all/recipe/prismarine_chisel.json
 85aeca1e0b9ccd3f86702c134f257522395cc8e4 data/more_of_all/recipe/raw_terminite.json

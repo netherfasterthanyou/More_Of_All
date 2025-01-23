@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_of_all:thallium"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "more_of_all:terminite"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "TST",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:hammer"
+  }
+}

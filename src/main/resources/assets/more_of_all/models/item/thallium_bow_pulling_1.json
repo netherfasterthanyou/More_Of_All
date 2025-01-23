@@ -1,0 +1,6 @@
+{
+  "parent": "more_of_all:item/thallium_bow",
+  "textures": {
+    "layer0": "more_of_all:item/thallium_bow_pulling_1"
+  }
+}

@@ -1,7 +1,13 @@
-// 1.21.1	2025-01-18T18:19:07.4724933	Tags for minecraft:item mod id more_of_all
+// 1.21.1	2025-01-19T11:31:55.762561	Tags for minecraft:item mod id more_of_all
 64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/enchantable/armor.json
+082cf918a3c134922f33248ae9a934f00df1d862 data/minecraft/tags/item/enchantable/chest_armor.json
+9df64f4da23db025622ef297a8c127a4a805eef8 data/minecraft/tags/item/enchantable/durability.json
+47bb2ccbe191469fb3a97352a764b70b620e2e89 data/minecraft/tags/item/enchantable/foot_armor.json
+b9b14badd1a14a17ea82a26141dc6d3d497c35d9 data/minecraft/tags/item/enchantable/head_armor.json
+7cee2d0f75e08c242cda411bd4c2b0a96a968b72 data/minecraft/tags/item/enchantable/leg_armor.json
 c28967f57eb02ef0082d3b6f87bdcb740fe05806 data/minecraft/tags/item/enchantable/mining.json
-8a7f8e3d56e9c4abc2fff5ff5d246ee3c42fe578 data/minecraft/tags/item/enchantable/sharp_weapon.json
+c28967f57eb02ef0082d3b6f87bdcb740fe05806 data/minecraft/tags/item/enchantable/mining_loot.json
+b30149290b9f24af863358111ceb0a0aa20d77cb data/minecraft/tags/item/enchantable/sharp_weapon.json
 ec5c6c0ae5ce6af8473a670d5494e7be70edb5d4 data/minecraft/tags/item/enchantable/sword.json
 64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/trimmable_armor.json
 e5f5c396af1b12f3bcec9401e6b09d86878abe36 data/minecraft/tags/item/trim_materials.json

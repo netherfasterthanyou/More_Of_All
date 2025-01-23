@@ -58,14 +58,70 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(modItems.THALLIUM_BOOTS.get());
 
 
+        tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(modItems.TERMINITE_LEGGINGS.get())
+                .add(modItems.THALLIUM_LEGGINGS.get());
+        tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(modItems.TERMINITE_HELMET.get())
+                .add(modItems.THALLIUM_HELMET.get());
+
+        tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(modItems.TERMINITE_CHESTPLATE.get())
+                .add(modItems.THALLIUM_CHESTPLATE.get());
+        tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(modItems.TERMINITE_BOOTS.get())
+                .add(modItems.THALLIUM_BOOTS.get());
+
+
+
+        tag(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(modItems.TERMINITE_HELMET.get())
+                .add(modItems.TERMINITE_CHESTPLATE.get())
+                .add(modItems.TERMINITE_LEGGINGS.get())
+                .add(modItems.TERMINITE_BOOTS.get())
+                .add(modItems.THALLIUM_HELMET.get())
+                .add(modItems.THALLIUM_CHESTPLATE.get())
+                .add(modItems.THALLIUM_LEGGINGS.get())
+                .add(modItems.THALLIUM_BOOTS.get())
+                .add(modItems.TERMINITE_SWORD.get())
+                .add(modItems.THALLIUM_SWORD.get())
+                .add(modItems.HAMMER.get())
+                .add(modItems.THALLIUM_AXE.get())
+                .add(modItems.TERMINITE_AXE.get())
+                .add(modItems.THALLIUM_PICKAXE.get())
+                .add(modItems.THALLIUM_AXE.get())
+                .add(modItems.THALLIUM_SHOVEL.get())
+                .add(modItems.THALLIUM_HOE.get())
+
+                .add(modItems.TERMINITE_SHOVEL.get())
+                .add(modItems.TERMINITE_AXE.get())
+                .add(modItems.TERMINITE_PICKAXE.get())
+                .add(modItems.TERMINITE_HOE.get());
+
         tag(ItemTags.SWORD_ENCHANTABLE)
                 .add(modItems.TERMINITE_SWORD.get())
                 .add(modItems.THALLIUM_SWORD.get())
                 .add(modItems.HAMMER.get());
         tag(ItemTags.SHARP_WEAPON_ENCHANTABLE)
+                .add(modItems.TERMINITE_SWORD.get())
+                .add(modItems.HAMMER.get())
+                .add(modItems.THALLIUM_SWORD.get())
                 .add(modItems.THALLIUM_AXE.get())
                 .add(modItems.TERMINITE_AXE.get());
         tag(ItemTags.MINING_ENCHANTABLE)
+
+                .add(modItems.THALLIUM_PICKAXE.get())
+                .add(modItems.THALLIUM_AXE.get())
+                .add(modItems.THALLIUM_SHOVEL.get())
+                .add(modItems.THALLIUM_HOE.get())
+
+                .add(modItems.TERMINITE_SHOVEL.get())
+                .add(modItems.TERMINITE_AXE.get())
+                .add(modItems.TERMINITE_PICKAXE.get())
+                .add(modItems.TERMINITE_HOE.get())
+                .add(modItems.HAMMER.get());
+
+        tag(ItemTags.MINING_LOOT_ENCHANTABLE)
 
                 .add(modItems.THALLIUM_PICKAXE.get())
                 .add(modItems.THALLIUM_AXE.get())

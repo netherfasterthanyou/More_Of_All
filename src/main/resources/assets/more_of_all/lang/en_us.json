@@ -61,6 +61,19 @@
   "item.more_of_all.thallium_pickaxe": "Thallium Pickaxe",
   "item.more_of_all.thallium_sword": "Thallium Sword",
   "item.more_of_all.hammer": "Hammer",
+  "effect.more_of_all.slimey": "Slimey",
+
+
+  "enchantment.more_of_all.thundering": "Call of Zeus",
+  "enchantment.more_of_all.tnt_explode_effect": "TNT Shot",
+  "enchantment.more_of_all.life_steal": "Life Steal",
+  "enchantment.more_of_all.fireball": "Fireball",
+
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
 
 
   "item.more_of_all.thallium_helmet": "Thallium Helmet",
@@ -69,11 +82,18 @@
   "item.more_of_all.thallium_boots": "Thallium Boots",
   "item.more_of_all.track_armor_trim_smithing_template": "Smithing Template",
 
+  "item.more_of_all.chili_seeds": "Chili Seeds",
+  "block.more_of_all.chili_crop": "Chili Crop",
+  "item.more_of_all.blueberries": "Blueberries",
+  "block.more_of_all.blueberry_bush": "Blueberry Bush",
+
 
   "item.more_of_all.terminite_helmet": "Terminite Helmet",
   "item.more_of_all.terminite_chestplate": "Terminite Chestplate",
   "item.more_of_all.terminite_leggings": "Terminite Leggings",
   "item.more_of_all.terminite_boots": "Terminite Boots",
+  "item.more_of_all.terminite_bow": "Terminite Bow",
+  "item.more_of_all.thallium_bow": "Thallium Bow",
 
 
   "item.more_of_all.terminite_horse_armor": "Terminite Horse Armor",

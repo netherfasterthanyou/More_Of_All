@@ -184,7 +184,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', modItems.RAW_TERMINITE.get())
+                .unlockedBy(getHasName(modItems.RAW_TERMINITE.get()), has(modItems.RAW_TERMINITE.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.HAMMER.get())
+                .pattern("AAA")
+                .pattern("TST")
+                .pattern(" S ")
+                .define('A', modItems.THALLIUM.get())
+                .define('T', modItems.TERMINITE.get())
+                .define('S', Items.STICK)
                 .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.THALLIUM_BLOCK.get())
                 .pattern("AAA")

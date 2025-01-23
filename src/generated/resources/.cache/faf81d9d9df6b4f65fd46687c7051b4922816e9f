@@ -1,7 +1,9 @@
-// 1.21.1	2025-01-18T18:19:07.4724933	Item Models: more_of_all
+// 1.21.1	2025-01-22T16:59:19.7898047	Item Models: more_of_all
 ec86424f2576787433a0664d7ce069c6dd9438c5 assets/more_of_all/models/item/blackstone_chisel.json
+98d602eb463db6fc7b01a2ad08b606c2048219e3 assets/more_of_all/models/item/blueberries.json
 e56b53544080fe1cbac0f821113e344eef634bd3 assets/more_of_all/models/item/chainsaw.json
 48e3b47b0a11dc0feda8cf573b57e4efd88a83a8 assets/more_of_all/models/item/chili.json
+19f528a666a880559eede0c2169a83c0031f06e5 assets/more_of_all/models/item/chili_seeds.json
 82f5b8ba4c2c4738a808a265dbc57b4677bf7625 assets/more_of_all/models/item/chisel.json
 11ce5ef4483a1ba137871efe98af51e95e095294 assets/more_of_all/models/item/deepslate_chisel.json
 751c895ac75bad92b30d6b6992df673d709cc31d assets/more_of_all/models/item/dormant_starlight.json

@@ -1,5 +1,6 @@
 package com.mod.more_of_all.block.custom;
 
+import com.mod.more_of_all.item.modItems;
 import com.mod.more_of_all.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

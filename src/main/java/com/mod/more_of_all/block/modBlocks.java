@@ -1,9 +1,7 @@
 package com.mod.more_of_all.block;
 
 import com.mod.more_of_all.ExampleMod;
-import com.mod.more_of_all.block.custom.Terminite_Lamp;
-import com.mod.more_of_all.block.custom.Thallium_Lamp;
-import com.mod.more_of_all.block.custom.salvager;
+import com.mod.more_of_all.block.custom.*;
 import com.mod.more_of_all.item.modItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -122,6 +120,12 @@ public class modBlocks {
             () -> new Thallium_Lamp(BlockBehaviour.Properties.of().strength(3)
                     .lightLevel(state -> state.getValue(Thallium_Lamp.CLICKED)? 15:0)));
 
+
+    public static final RegistryObject<Block> CHILI_CROP = BLOCKS.register("chili_crop",
+            () -> new ChiliCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POTATOES)));
+
+    public static final RegistryObject<Block> BLUEBERRY_BUSH = BLOCKS.register("blue_berry_bush",
+            () -> new BlueBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
 
 

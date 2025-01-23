@@ -1,9 +1,13 @@
 package com.mod.more_of_all;
 
 import com.mod.more_of_all.block.modBlocks;
+import com.mod.more_of_all.effect.ModEffects;
+import com.mod.more_of_all.enchantment.ModEnchantmentEffect;
 import com.mod.more_of_all.item.modItems;
+import com.mod.more_of_all.potion.ModPotions;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -18,6 +22,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+
+
+
 
 
 
@@ -43,6 +50,10 @@ public class ExampleMod
         modItems.register(modEventBus);
 
         modBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+        ModEnchantmentEffect.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -50,9 +61,12 @@ public class ExampleMod
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(modItems.CHILI.get(), 0.4f);
+            ComposterBlock.COMPOSTABLES.put(modItems.CHILI_SEEDS.get(), 0.15f);
+            ComposterBlock.COMPOSTABLES.put(modItems.BLUEBERRIES.get(), 0.15f);
+        });
     }
 
     // CREATIVE TAB!
@@ -68,7 +82,12 @@ public class ExampleMod
 
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(modItems.CHILI);
+            event.accept(modItems.BLUEBERRIES);
+            event.accept(modItems.CHILI_SEEDS);
+
         }
+
+
 
 
 
@@ -98,6 +117,7 @@ public class ExampleMod
 
             event.accept(modBlocks.TERMINITE_LAMP);
             event.accept(modBlocks.THALLIUM_LAMP);
+
 
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
@@ -137,6 +157,7 @@ public class ExampleMod
 
             event.accept(modItems.TERMINITE_HORSE_ARMOR);
             event.accept(modItems.THALLIUM_HORSE_ARMOR);
+
 
 
         }

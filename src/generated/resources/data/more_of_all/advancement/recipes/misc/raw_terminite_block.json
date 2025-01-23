@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_thallium": {
+    "has_raw_terminite": {
       "conditions": {
         "items": [
           {
-            "items": "more_of_all:thallium"
+            "items": "more_of_all:raw_terminite"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_thallium"
+      "has_raw_terminite"
     ]
   ],
   "rewards": {

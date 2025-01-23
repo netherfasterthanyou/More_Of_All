@@ -11,6 +11,10 @@ public class ModToolTiers {
             ModTags.Blocks.INCORRECT_FOR_TERMINITE_TOOL);
 
     public static final Tier THALLIUM = new ForgeTier(1400, 6, 3.5f, 22,
+            ModTags.Blocks.NEEDS_THALLIUM_TOOL, () -> Ingredient.of(modItems.THALLIUM.get()),
+            ModTags.Blocks.INCORRECT_FOR_THALLIUM_TOOL);
+
+    public static final Tier HAMMER = new ForgeTier(7400, 9, 4.5f, 22,
             ModTags.Blocks.NEEDS_TERMINITE_TOOL, () -> Ingredient.of(modItems.TERMINITE.get()),
             ModTags.Blocks.INCORRECT_FOR_TERMINITE_TOOL);
 }

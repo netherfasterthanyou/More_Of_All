@@ -1,4 +1,6 @@
-// 1.21.1	2025-01-16T18:08:34.9236956	Loot Tables
+// 1.21.1	2025-01-22T16:59:19.8054037	Loot Tables
+683255ead1a39b5b1dfdb9c6a4e2641d22cf6401 data/more_of_all/loot_table/blocks/blue_berry_bush.json
+44514ae01223d8b11350f58a6c28673c94d7c8e3 data/more_of_all/loot_table/blocks/chili_crop.json
 6673a2e5c5706c886d38fd5c2d62a74dbb36cc53 data/more_of_all/loot_table/blocks/deepslate_terminite_ore.json
 3417dac5d1dc00d7f6e3bc59e6cc157eb00107b5 data/more_of_all/loot_table/blocks/deepslate_thallium_ore.json
 fcce44793f35641c7ed8da8837960b54de6fee31 data/more_of_all/loot_table/blocks/raw_terminite_block.json

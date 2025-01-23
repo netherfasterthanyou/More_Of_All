@@ -1,0 +1,8 @@
+{
+  "asset_id": "more_of_all:track",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.more_of_all.track"
+  },
+  "template_item": "more_of_all:track_armor_trim_smithing_template"
+}
