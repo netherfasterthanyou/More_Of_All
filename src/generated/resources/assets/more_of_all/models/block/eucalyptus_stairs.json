@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "more_of_all:block/eucalyptus_planks",
+    "side": "more_of_all:block/eucalyptus_planks",
+    "top": "more_of_all:block/eucalyptus_planks"
+  }
+}

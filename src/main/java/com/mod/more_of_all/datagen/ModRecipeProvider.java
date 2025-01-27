@@ -159,9 +159,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AA ")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('A', modItems.TERMINITE.get())
+                .define('A', modItems.THALLIUM.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(modBlocks.EUCALYPTUS_LOG.get())
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_LOG.get()), has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.BLOODWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.BLOODWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_LOG.get()), has(modBlocks.BLOODWOOD_LOG.get())).save(pRecipeOutput);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.DRIFTWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.DRIFTWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_LOG.get()), has(modBlocks.DRIFTWOOD_LOG.get())).save(pRecipeOutput);
+
+
+
 
 
 
@@ -369,6 +388,100 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         trapdoorBuilder(modBlocks.TERMINITE_TRAP_DOOR.get(), Ingredient.of(modItems.TERMINITE.get())).group("terminite")
                 .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+
+
+
+
+        stairBuilder(modBlocks.BLOODWOOD_STAIRS.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.BLOODWOOD_SLAB.get(), modBlocks.BLOODWOOD_PLANKS.get());
+
+        fenceBuilder(modBlocks.BLOODWOOD_FENCE.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(modBlocks.BLOODWOOD_FENCE_GATE.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.BLOODWOOD_WALL.get(), modBlocks.BLOODWOOD_PLANKS.get());
+
+        buttonBuilder(modBlocks.BLOODWOOD_BUTTON.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, modBlocks.BLOODWOOD_PRESSURE_PLATE.get(), modBlocks.BLOODWOOD_PLANKS.get());
+
+        doorBuilder(modBlocks.BLOODWOOD_DOOR.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(modBlocks.BLOODWOOD_TRAP_DOOR.get(), Ingredient.of(modBlocks.BLOODWOOD_PLANKS.get())).group("bloodwood")
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_PLANKS.get()), has(modBlocks.BLOODWOOD_PLANKS.get())).save(pRecipeOutput);
+
+
+
+
+
+
+
+
+        stairBuilder(modBlocks.DRIFTWOOD_STAIRS.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.DRIFTWOOD_SLAB.get(), modBlocks.DRIFTWOOD_PLANKS.get());
+
+        fenceBuilder(modBlocks.DRIFTWOOD_FENCE.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(modBlocks.DRIFTWOOD_FENCE_GATE.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.DRIFTWOOD_WALL.get(), modBlocks.DRIFTWOOD_PLANKS.get());
+
+        buttonBuilder(modBlocks.DRIFTWOOD_BUTTON.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, modBlocks.DRIFTWOOD_PRESSURE_PLATE.get(), modBlocks.DRIFTWOOD_PLANKS.get());
+
+        doorBuilder(modBlocks.DRIFTWOOD_DOOR.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(modBlocks.DRIFTWOOD_TRAP_DOOR.get(), Ingredient.of(modBlocks.DRIFTWOOD_PLANKS.get())).group("driftwood")
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_PLANKS.get()), has(modBlocks.DRIFTWOOD_PLANKS.get())).save(pRecipeOutput);
+
+
+
+
+
+
+
+
+
+        stairBuilder(modBlocks.EUCALYPTUS_STAIRS.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.EUCALYPTUS_SLAB.get(), modBlocks.EUCALYPTUS_PLANKS.get());
+
+        fenceBuilder(modBlocks.EUCALYPTUS_FENCE.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(modBlocks.EUCALYPTUS_FENCE_GATE.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, modBlocks.EUCALYPTUS_WALL.get(), modBlocks.EUCALYPTUS_PLANKS.get());
+
+        buttonBuilder(modBlocks.EUCALYPTUS_BUTTON.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+        pressurePlate(pRecipeOutput, modBlocks.EUCALYPTUS_PRESSURE_PLATE.get(), modBlocks.EUCALYPTUS_PLANKS.get());
+
+        doorBuilder(modBlocks.EUCALYPTUS_DOOR.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(modBlocks.EUCALYPTUS_TRAP_DOOR.get(), Ingredient.of(modBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_PLANKS.get()), has(modBlocks.EUCALYPTUS_PLANKS.get())).save(pRecipeOutput);
+
+
+
 
 
 

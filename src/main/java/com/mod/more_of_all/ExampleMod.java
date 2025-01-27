@@ -5,6 +5,7 @@ import com.mod.more_of_all.effect.ModEffects;
 import com.mod.more_of_all.enchantment.ModEnchantmentEffect;
 import com.mod.more_of_all.item.modItems;
 import com.mod.more_of_all.potion.ModPotions;
+
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -54,12 +55,17 @@ public class ExampleMod
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantmentEffect.register(modEventBus);
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
@@ -91,7 +97,7 @@ public class ExampleMod
 
 
 
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(modBlocks.THALLIUM_BLOCK);
             event.accept(modBlocks.TERMINITE_BLOCK);
             event.accept(modBlocks.RAW_TERMINITE_BLOCK);
@@ -104,6 +110,59 @@ public class ExampleMod
             event.accept(modBlocks.TERMINITE_PRESSURE_PLATE);
             event.accept(modBlocks.TERMINITE_TRAP_DOOR);
             event.accept(modBlocks.TERMINITE_STAIRS);
+
+            event.accept(modBlocks.BLOODWOOD_BUTTON);
+            event.accept(modBlocks.BLOODWOOD_DOOR);
+            event.accept(modBlocks.BLOODWOOD_SLAB);
+            event.accept(modBlocks.BLOODWOOD_FENCE_GATE);
+            event.accept(modBlocks.BLOODWOOD_WALL);
+            event.accept(modBlocks.BLOODWOOD_FENCE);
+            event.accept(modBlocks.BLOODWOOD_PRESSURE_PLATE);
+            event.accept(modBlocks.BLOODWOOD_TRAP_DOOR);
+            event.accept(modBlocks.BLOODWOOD_STAIRS);
+
+            event.accept(modBlocks.DRIFTWOOD_BUTTON);
+            event.accept(modBlocks.DRIFTWOOD_DOOR);
+            event.accept(modBlocks.DRIFTWOOD_SLAB);
+            event.accept(modBlocks.DRIFTWOOD_FENCE_GATE);
+            event.accept(modBlocks.DRIFTWOOD_WALL);
+            event.accept(modBlocks.DRIFTWOOD_FENCE);
+            event.accept(modBlocks.DRIFTWOOD_PRESSURE_PLATE);
+            event.accept(modBlocks.DRIFTWOOD_TRAP_DOOR);
+            event.accept(modBlocks.DRIFTWOOD_STAIRS);
+
+
+            event.accept(modBlocks.EUCALYPTUS_BUTTON);
+            event.accept(modBlocks.EUCALYPTUS_DOOR);
+            event.accept(modBlocks.EUCALYPTUS_SLAB);
+            event.accept(modBlocks.EUCALYPTUS_FENCE_GATE);
+            event.accept(modBlocks.EUCALYPTUS_WALL);
+            event.accept(modBlocks.EUCALYPTUS_FENCE);
+            event.accept(modBlocks.EUCALYPTUS_PRESSURE_PLATE);
+            event.accept(modBlocks.EUCALYPTUS_TRAP_DOOR);
+            event.accept(modBlocks.EUCALYPTUS_STAIRS);
+
+
+            event.accept(modBlocks.BLOODWOOD_PLANKS);
+            event.accept(modBlocks.DRIFTWOOD_PLANKS);
+            event.accept(modBlocks.EUCALYPTUS_PLANKS);
+
+
+            event.accept(modBlocks.EUCALYPTUS_LOG);
+            event.accept(modBlocks.STRIPPED_EUCALYPTUS_LOG);
+            event.accept(modBlocks.EUCALYPTUS_WOOD);
+            event.accept(modBlocks.STRIPPED_EUCALYPTUS_WOOD);
+
+            event.accept(modBlocks.DRIFTWOOD_LOG);
+            event.accept(modBlocks.STRIPPED_DRIFTWOOD_LOG);
+            event.accept(modBlocks.DRIFTWOOD_WOOD);
+            event.accept(modBlocks.STRIPPED_DRIFTWOOD_WOOD);
+
+            event.accept(modBlocks.BLOODWOOD_LOG);
+            event.accept(modBlocks.STRIPPED_BLOODWOOD_LOG);
+            event.accept(modBlocks.BLOODWOOD_WOOD);
+            event.accept(modBlocks.STRIPPED_BLOODWOOD_WOOD);
+
 
             event.accept(modBlocks.THALLIUM_FENCE);
             event.accept(modBlocks.THALLIUM_DOOR);
@@ -118,8 +177,18 @@ public class ExampleMod
             event.accept(modBlocks.TERMINITE_LAMP);
             event.accept(modBlocks.THALLIUM_LAMP);
 
-
         }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(modBlocks.EUCALYPTUS_LEAVES);
+            event.accept(modBlocks.EUCALYPTUS_SAPLING);
+            event.accept(modBlocks.BLOODWOOD_LEAVES);
+            event.accept(modBlocks.BLOODWOOD_SAPLING);
+            event.accept(modBlocks.DRIFTWOOD_LEAVES);
+            event.accept(modBlocks.DRIFTWOOD_SAPLING);
+        }
+
+
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(modItems.CHISEL);
             event.accept(modItems.BLACKSTONE_CHISEL);

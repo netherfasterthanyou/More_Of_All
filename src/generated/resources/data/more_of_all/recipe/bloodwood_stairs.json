@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bloodwood",
+  "key": {
+    "#": {
+      "item": "more_of_all:bloodwood_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "more_of_all:bloodwood_stairs"
+  }
+}

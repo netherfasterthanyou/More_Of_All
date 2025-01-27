@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "more_of_all:block/bloodwood_planks",
+    "side": "more_of_all:block/bloodwood_planks",
+    "top": "more_of_all:block/bloodwood_planks"
+  }
+}

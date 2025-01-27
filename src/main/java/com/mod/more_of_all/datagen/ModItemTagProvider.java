@@ -1,15 +1,18 @@
 package com.mod.more_of_all.datagen;
 
 import com.mod.more_of_all.ExampleMod;
+import com.mod.more_of_all.block.modBlocks;
 import com.mod.more_of_all.item.modItems;
 import com.mod.more_of_all.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagEntry;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -142,6 +145,31 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRIM_TEMPLATES)
                 .add(modItems.TRACK_SMITHING_TEMPLATE.get());
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(modBlocks.EUCALYPTUS_LOG.get().asItem())
+                .add(modBlocks.EUCALYPTUS_WOOD.get().asItem())
+                .add(modBlocks.STRIPPED_EUCALYPTUS_LOG.get().asItem())
+                .add(modBlocks.STRIPPED_EUCALYPTUS_WOOD.get().asItem())
+                .add(modBlocks.DRIFTWOOD_LOG.get().asItem())
+                .add(modBlocks.DRIFTWOOD_WOOD.get().asItem())
+                .add(modBlocks.STRIPPED_DRIFTWOOD_LOG.get().asItem())
+                .add(modBlocks.STRIPPED_DRIFTWOOD_WOOD.get().asItem())
+                .add(modBlocks.BLOODWOOD_LOG.get().asItem())
+                .add(modBlocks.BLOODWOOD_WOOD.get().asItem())
+                .add(modBlocks.STRIPPED_BLOODWOOD_LOG.get().asItem())
+                .add(modBlocks.STRIPPED_BLOODWOOD_WOOD.get().asItem());
+
+
+        tag(ItemTags.PLANKS)
+                .add(modBlocks.DRIFTWOOD_PLANKS.get().asItem())
+                .add(modBlocks.BLOODWOOD_PLANKS.get().asItem())
+                .add(modBlocks.EUCALYPTUS_PLANKS.get().asItem());
+    }
+
+
+
+
     }
 
 
@@ -149,4 +177,4 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
 
-}
+

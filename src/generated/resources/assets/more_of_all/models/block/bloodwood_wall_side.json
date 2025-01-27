@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "more_of_all:block/bloodwood_planks"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "driftwood",
+  "key": {
+    "#": {
+      "item": "more_of_all:driftwood_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "more_of_all:driftwood_trapdoor"
+  }
+}

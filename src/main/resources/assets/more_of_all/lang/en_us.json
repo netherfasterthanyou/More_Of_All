@@ -34,6 +34,38 @@
   "block.more_of_all.thallium_trapdoor": "Thallium Trapdoor",
 
 
+
+  "block.more_of_all.bloodwood_stairs": "Bloodwood Stairs",
+  "block.more_of_all.bloodwood_slab": "Bloodwood Slab",
+  "block.more_of_all.bloodwood_button": "Bloodwood Button",
+  "block.more_of_all.bloodwood_pressure_plate": "Bloodwood Pressure Plate",
+  "block.more_of_all.bloodwood_fence": "Bloodwood Fence",
+  "block.more_of_all.bloodwood_fence_gate": "Bloodwood Fence Gate",
+  "block.more_of_all.bloodwood_wall": "Bloodwood Wall",
+  "block.more_of_all.bloodwood_door": "Bloodwood Door",
+  "block.more_of_all.bloodwood_trapdoor": "Bloodwood Trapdoor",
+
+  "block.more_of_all.driftwood_stairs": "Driftwood Stairs",
+  "block.more_of_all.driftwood_slab": "Driftwood Slab",
+  "block.more_of_all.driftwood_button": "Driftwood Button",
+  "block.more_of_all.driftwood_pressure_plate": "Driftwood Pressure Plate",
+  "block.more_of_all.driftwood_fence": "Driftwood Fence",
+  "block.more_of_all.driftwood_fence_gate": "Driftwood Fence Gate",
+  "block.more_of_all.driftwood_wall": "Driftwood Wall",
+  "block.more_of_all.driftwood_door": "Driftwood Door",
+  "block.more_of_all.driftwood_trapdoor": "Driftwood Trapdoor",
+
+  "block.more_of_all.eucalyptus_stairs": "Eucalyptus Stairs",
+  "block.more_of_all.eucalyptus_slab": "Eucalyptus Slab",
+  "block.more_of_all.eucalyptus_button": "Eucalyptus Button",
+  "block.more_of_all.eucalyptus_pressure_plate": "Eucalyptus Pressure Plate",
+  "block.more_of_all.eucalyptus_fence": "Eucalyptus Fence",
+  "block.more_of_all.eucalyptus_fence_gate": "Eucalyptus Fence Gate",
+  "block.more_of_all.eucalyptus_wall": "Eucalyptus Wall",
+  "block.more_of_all.eucalyptus_door": "Eucalyptus Door",
+  "block.more_of_all.eucalyptus_trapdoor": "Eucalyptus Trapdoor",
+
+
   "block.more_of_all.terminite_stairs": "Terminite Stairs",
   "block.more_of_all.terminite_slab": "Terminite Slab",
   "block.more_of_all.terminite_button": "Terminite Button",
@@ -73,6 +105,31 @@
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Slimey Arrow",
+
+  "block.more_of_all.eucalyptus_log": "Eucalyptus Log",
+  "block.more_of_all.eucalyptus_leaves": "Eucalyptus Leaves",
+  "block.more_of_all.eucalyptus_planks": "Eucalyptus Planks",
+  "block.more_of_all.eucalyptus_wood": "Eucalyptus Wood",
+  "block.more_of_all.stripped_eucalyptus_wood": "Stripped Eucalyptus Wood",
+  "block.more_of_all.stripped_eucalyptus_log": "Stripped Eucalyptus Log",
+  "block.more_of_all.eucalyptus_sapling": "Eucalyptus Sapling",
+
+  "block.more_of_all.bloodwood_log": "Bloodwood Log",
+  "block.more_of_all.bloodwood_leaves": "Bloodwood Leaves",
+  "block.more_of_all.bloodwood_planks": "Bloodwood Planks",
+  "block.more_of_all.bloodwood_wood": "Bloodwood Wood",
+  "block.more_of_all.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
+  "block.more_of_all.stripped_bloodwood_log": "Stripped Bloodwood Log",
+  "block.more_of_all.bloodwood_sapling": "Bloodwood Sapling",
+
+  "block.more_of_all.driftwood_log": "Driftwood Log",
+  "block.more_of_all.driftwood_leaves": "Driftwood Leaves",
+  "block.more_of_all.driftwood_planks": "Driftwood Planks",
+  "block.more_of_all.driftwood_wood": "Driftwood Wood",
+  "block.more_of_all.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.more_of_all.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.more_of_all.driftwood_sapling": "Driftwood Sapling",
 
 
 

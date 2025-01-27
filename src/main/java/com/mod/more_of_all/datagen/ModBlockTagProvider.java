@@ -58,6 +58,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(modBlocks.TERMINITE_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(modBlocks.TERMINITE_WALL.get());
 
+
+        tag(BlockTags.FENCES).add(modBlocks.BLOODWOOD_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(modBlocks.BLOODWOOD_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(modBlocks.BLOODWOOD_WALL.get());
+        tag(BlockTags.FENCES).add(modBlocks.EUCALYPTUS_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(modBlocks.EUCALYPTUS_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(modBlocks.EUCALYPTUS_WALL.get());
+        tag(BlockTags.FENCES).add(modBlocks.DRIFTWOOD_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(modBlocks.DRIFTWOOD_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(modBlocks.DRIFTWOOD_WALL.get());
+
         tag(BlockTags.FENCES).add(modBlocks.THALLIUM_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(modBlocks.THALLIUM_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(modBlocks.THALLIUM_WALL.get());
@@ -78,5 +89,25 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_TERMINITE_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_TERMINITE_TOOL);
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(modBlocks.EUCALYPTUS_LOG.get())
+                .add(modBlocks.EUCALYPTUS_WOOD.get())
+                .add(modBlocks.STRIPPED_EUCALYPTUS_WOOD.get())
+                .add(modBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .add(modBlocks.DRIFTWOOD_LOG.get())
+                .add(modBlocks.DRIFTWOOD_WOOD.get())
+                .add(modBlocks.STRIPPED_DRIFTWOOD_WOOD.get())
+                .add(modBlocks.STRIPPED_DRIFTWOOD_LOG.get())
+                .add(modBlocks.BLOODWOOD_LOG.get())
+                .add(modBlocks.BLOODWOOD_WOOD.get())
+                .add(modBlocks.STRIPPED_BLOODWOOD_WOOD.get())
+                .add(modBlocks.STRIPPED_BLOODWOOD_LOG.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(modBlocks.EUCALYPTUS_PLANKS.get())
+                .add(modBlocks.BLOODWOOD_PLANKS.get())
+                .add(modBlocks.DRIFTWOOD_PLANKS.get());
+
     }
 }

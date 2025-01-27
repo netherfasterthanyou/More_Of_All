@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "driftwood",
+  "key": {
+    "#": {
+      "item": "more_of_all:driftwood_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "more_of_all:driftwood_stairs"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "bloodwood",
+  "ingredients": [
+    {
+      "item": "more_of_all:bloodwood_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:bloodwood_button"
+  }
+}

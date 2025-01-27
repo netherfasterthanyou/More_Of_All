@@ -1,9 +1,11 @@
-// 1.21.1	2025-01-17T15:54:29.8368216	Tags for minecraft:block mod id more_of_all
-be598b0a5dd89c09a464311136fcf5d48a3e824b data/minecraft/tags/block/fences.json
-5b2c27413b53d1bcb5dcd91bfc8b2b7dc7d3e204 data/minecraft/tags/block/fence_gates.json
+// 1.21.1	2025-01-26T20:18:50.0341468	Tags for minecraft:block mod id more_of_all
+7239e5f46d1ab536e84c8affb2c4675dd0b86309 data/minecraft/tags/block/fences.json
+6cea986fce01a97b9ba63d3eaf6ee1c8f8960963 data/minecraft/tags/block/fence_gates.json
+c4ac04bf26c6932dc40c3e194a654e9cc00a6b75 data/minecraft/tags/block/logs_that_burn.json
 9b34c251fd0d92cc7b080cb6e9cadc55e8843b24 data/minecraft/tags/block/mineable/pickaxe.json
 1df1ec6f141902afed9398dde9f93735d9fb74bc data/minecraft/tags/block/needs_iron_tool.json
-14c090ed00d25d3cf76fe1f0bde92be8ca7e1d7a data/minecraft/tags/block/walls.json
+8a59d4f6f89b13a18d804029ff595fcff84b614d data/minecraft/tags/block/planks.json
+631f92b103d22d119258db1ff5cd7e490b9b22f8 data/minecraft/tags/block/walls.json
 b5d18432c272bbbb9208340d2d98414cc46a2161 data/more_of_all/tags/block/incorrect_for_terminite_tool.json
 9f72baf88c4e4592285d3b0b0cfe1ece49bc3577 data/more_of_all/tags/block/incorrect_for_thallium_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/more_of_all/tags/block/needs_terminite_tool.json

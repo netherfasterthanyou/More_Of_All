@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-22T17:55:28.3032135	Registries
+// 1.21.1	2025-01-26T11:47:28.903196	Registries
 cf5bb59d3ebef990a58f0f4478a37e7ce06d36e3 data/more_of_all/enchantment/fireball.json
 1d2cef447c604df4cf5932023b602de9ebd184e4 data/more_of_all/enchantment/life_steal.json
 ad207ffb2249dc7403c973c8f99c1b3cc5cb5264 data/more_of_all/enchantment/thundering.json
@@ -8,6 +8,9 @@ f72fe4d9f9a7a39cf322e9e503fb70f398408236 data/more_of_all/forge/biome_modifier/a
 8436be3f62a586ff12c16d1319b023e4d71ece13 data/more_of_all/trim_material/terminite.json
 0a0ede07b24b23933eed1b2826d6ec6efdf76614 data/more_of_all/trim_material/thallium.json
 073055a59a0fef6669984ca2775ea300cdd52f2f data/more_of_all/trim_pattern/track.json
+d8ac0826b2cd9669e2d32bbd513ce50d349e9ada data/more_of_all/worldgen/configured_feature/bloodwood.json
+c14e63260fb82df100acfb84f1732c2f14c34937 data/more_of_all/worldgen/configured_feature/driftwood.json
+c5c9fa4ae48abb0f1fc5514b8e1129145952f97d data/more_of_all/worldgen/configured_feature/eucalyptus.json
 eb0cc216bad2748d68f111aa1c18481438483d20 data/more_of_all/worldgen/configured_feature/overworld_terminite_ore.json
 992f10b23ecbcf4d0b259b63fa1c8dd1e56e9a7b data/more_of_all/worldgen/configured_feature/overworld_thallium_ore.json
 feb7631e8c2158b3d7411912d0e28055e3d118d0 data/more_of_all/worldgen/placed_feature/terminite_ore_placed.json

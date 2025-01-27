@@ -76,11 +76,163 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.THALLIUM_PRESSURE_PLATE);
         blockItem(modBlocks.THALLIUM_TRAP_DOOR, "bottom");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        logBlock(modBlocks.EUCALYPTUS_LOG.get());
+        logBlock( modBlocks.STRIPPED_EUCALYPTUS_LOG.get());
+        axisBlock( modBlocks.EUCALYPTUS_WOOD.get(), blockTexture(modBlocks.EUCALYPTUS_LOG.get()), blockTexture(modBlocks.EUCALYPTUS_LOG.get()));
+        axisBlock( modBlocks.STRIPPED_EUCALYPTUS_WOOD.get(), blockTexture(modBlocks.STRIPPED_EUCALYPTUS_LOG.get()), blockTexture(modBlocks.STRIPPED_EUCALYPTUS_LOG.get()));
+
+        blockItem(modBlocks.STRIPPED_EUCALYPTUS_WOOD);
+        blockItem(modBlocks.EUCALYPTUS_WOOD);
+
+        blockItem(modBlocks.EUCALYPTUS_LOG);
+
+        blockItem(modBlocks.STRIPPED_EUCALYPTUS_LOG);
+        blockWithItem(modBlocks.EUCALYPTUS_PLANKS);
+
+
+
+        leavesBlock(modBlocks.EUCALYPTUS_LEAVES);
+        saplingBlock(modBlocks.EUCALYPTUS_SAPLING);
+
+        logBlock( modBlocks.DRIFTWOOD_LOG.get());
+        logBlock( modBlocks.STRIPPED_DRIFTWOOD_LOG.get());
+        axisBlock(modBlocks.DRIFTWOOD_WOOD.get(), blockTexture(modBlocks.DRIFTWOOD_LOG.get()), blockTexture(modBlocks.DRIFTWOOD_LOG.get()));
+        axisBlock( modBlocks.STRIPPED_DRIFTWOOD_WOOD.get(), blockTexture(modBlocks.STRIPPED_DRIFTWOOD_LOG.get()), blockTexture(modBlocks.STRIPPED_DRIFTWOOD_LOG.get()));
+
+        blockItem(modBlocks.STRIPPED_DRIFTWOOD_WOOD);
+        blockItem(modBlocks.DRIFTWOOD_WOOD);
+
+        blockItem(modBlocks.DRIFTWOOD_LOG);
+
+        blockItem(modBlocks.STRIPPED_DRIFTWOOD_LOG);
+        blockWithItem(modBlocks.DRIFTWOOD_PLANKS);
+
+
+
+        leavesBlock(modBlocks.DRIFTWOOD_LEAVES);
+        saplingBlock(modBlocks.DRIFTWOOD_SAPLING);
+
+        logBlock(modBlocks.BLOODWOOD_LOG.get());
+        axisBlock(modBlocks.BLOODWOOD_WOOD.get(), blockTexture(modBlocks.BLOODWOOD_LOG.get()), blockTexture(modBlocks.BLOODWOOD_LOG.get()));
+        logBlock(modBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        axisBlock(modBlocks.STRIPPED_BLOODWOOD_WOOD.get(), blockTexture(modBlocks.STRIPPED_BLOODWOOD_LOG.get()), blockTexture(modBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+
+        blockItem(modBlocks.BLOODWOOD_LOG);
+        blockItem(modBlocks.BLOODWOOD_WOOD);
+        blockItem(modBlocks.STRIPPED_BLOODWOOD_LOG);
+        blockItem(modBlocks.STRIPPED_BLOODWOOD_WOOD);
+
+        blockWithItem(modBlocks.BLOODWOOD_PLANKS);
+
+        leavesBlock(modBlocks.BLOODWOOD_LEAVES);
+        saplingBlock(modBlocks.BLOODWOOD_SAPLING);
+
+
+        stairsBlock((StairBlock) modBlocks.BLOODWOOD_STAIRS.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+        slabBlock((SlabBlock) modBlocks.BLOODWOOD_SLAB.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+
+        buttonBlock(modBlocks.BLOODWOOD_BUTTON.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) modBlocks.BLOODWOOD_PRESSURE_PLATE.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+
+        fenceBlock(modBlocks.BLOODWOOD_FENCE.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) modBlocks.BLOODWOOD_FENCE_GATE.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+        wallBlock(modBlocks.BLOODWOOD_WALL.get(), blockTexture(modBlocks.BLOODWOOD_PLANKS.get()));
+
+        doorBlockWithRenderType(modBlocks.BLOODWOOD_DOOR.get(), modLoc("block/bloodwood_door_bottom"), modLoc("block/bloodwood_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) modBlocks.BLOODWOOD_TRAP_DOOR.get(), modLoc("block/bloodwood_trapdoor"), true, "cutout");
+
+        blockItem(modBlocks.BLOODWOOD_STAIRS);
+        blockItem(modBlocks.BLOODWOOD_SLAB);
+        blockItem(modBlocks.BLOODWOOD_FENCE_GATE);
+        blockItem(modBlocks.BLOODWOOD_PRESSURE_PLATE);
+        blockItem(modBlocks.BLOODWOOD_TRAP_DOOR, "bottom");
+
+
+
+        stairsBlock((StairBlock) modBlocks.DRIFTWOOD_STAIRS.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+        slabBlock((SlabBlock) modBlocks.DRIFTWOOD_SLAB.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+
+        buttonBlock(modBlocks.DRIFTWOOD_BUTTON.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) modBlocks.DRIFTWOOD_PRESSURE_PLATE.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+
+        fenceBlock(modBlocks.DRIFTWOOD_FENCE.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) modBlocks.DRIFTWOOD_FENCE_GATE.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+        wallBlock(modBlocks.DRIFTWOOD_WALL.get(), blockTexture(modBlocks.DRIFTWOOD_PLANKS.get()));
+
+        doorBlockWithRenderType(modBlocks.DRIFTWOOD_DOOR.get(), modLoc("block/driftwood_door_bottom"), modLoc("block/driftwood_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) modBlocks.DRIFTWOOD_TRAP_DOOR.get(), modLoc("block/driftwood_trapdoor"), true, "cutout");
+
+        blockItem(modBlocks.DRIFTWOOD_STAIRS);
+        blockItem(modBlocks.DRIFTWOOD_SLAB);
+        blockItem(modBlocks.DRIFTWOOD_FENCE_GATE);
+        blockItem(modBlocks.DRIFTWOOD_PRESSURE_PLATE);
+        blockItem(modBlocks.DRIFTWOOD_TRAP_DOOR, "bottom");
+
+
+
+        stairsBlock((StairBlock) modBlocks.EUCALYPTUS_STAIRS.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+        slabBlock((SlabBlock) modBlocks.EUCALYPTUS_SLAB.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+
+        buttonBlock(modBlocks.EUCALYPTUS_BUTTON.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) modBlocks.EUCALYPTUS_PRESSURE_PLATE.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+
+        fenceBlock(modBlocks.EUCALYPTUS_FENCE.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) modBlocks.EUCALYPTUS_FENCE_GATE.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+        wallBlock(modBlocks.EUCALYPTUS_WALL.get(), blockTexture(modBlocks.EUCALYPTUS_PLANKS.get()));
+
+        doorBlockWithRenderType(modBlocks.EUCALYPTUS_DOOR.get(), modLoc("block/eucalyptus_door_bottom"), modLoc("block/eucalyptus_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) modBlocks.EUCALYPTUS_TRAP_DOOR.get(), modLoc("block/eucalyptus_trapdoor"), true, "cutout");
+
+        blockItem(modBlocks.EUCALYPTUS_STAIRS);
+        blockItem(modBlocks.EUCALYPTUS_SLAB);
+        blockItem(modBlocks.EUCALYPTUS_FENCE_GATE);
+        blockItem(modBlocks.EUCALYPTUS_PRESSURE_PLATE);
+        blockItem(modBlocks.EUCALYPTUS_TRAP_DOOR, "bottom");
+
+
+
+
+
+
         customLamp();
 
 
         makeCrop(((CropBlock) modBlocks.CHILI_CROP.get()), "chili_crop_stage", "chili_crop_stage");
         makeBush(((SweetBerryBushBlock) modBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");
+    }
+
+
+
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject){
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
@@ -148,10 +300,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
-    private void blockItem(RegistryObject<Block> blockRegistryObject){
+    private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("more_of_all:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
+
     private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix){
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("more_of_all:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));

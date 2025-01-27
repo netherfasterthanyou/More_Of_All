@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-19T11:31:55.762561	Tags for minecraft:item mod id more_of_all
+// 1.21.1	2025-01-26T12:11:56.9248808	Tags for minecraft:item mod id more_of_all
 64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/enchantable/armor.json
 082cf918a3c134922f33248ae9a934f00df1d862 data/minecraft/tags/item/enchantable/chest_armor.json
 9df64f4da23db025622ef297a8c127a4a805eef8 data/minecraft/tags/item/enchantable/durability.json
@@ -9,6 +9,8 @@ c28967f57eb02ef0082d3b6f87bdcb740fe05806 data/minecraft/tags/item/enchantable/mi
 c28967f57eb02ef0082d3b6f87bdcb740fe05806 data/minecraft/tags/item/enchantable/mining_loot.json
 b30149290b9f24af863358111ceb0a0aa20d77cb data/minecraft/tags/item/enchantable/sharp_weapon.json
 ec5c6c0ae5ce6af8473a670d5494e7be70edb5d4 data/minecraft/tags/item/enchantable/sword.json
+e89163c171c459eae2348c6a0dc0045b85a1607f data/minecraft/tags/item/logs_that_burn.json
+2e2bb607a70bfd2b5306fca6ec99abca167923b0 data/minecraft/tags/item/planks.json
 64318377ac814628aa46bff1997081cc0bfd9adb data/minecraft/tags/item/trimmable_armor.json
 e5f5c396af1b12f3bcec9401e6b09d86878abe36 data/minecraft/tags/item/trim_materials.json
 c95a9dc6d1c6d917cf9aacad38b7935a04f9f107 data/minecraft/tags/item/trim_templates.json

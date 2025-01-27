@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -73,15 +74,31 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(modBlocks.TERMINITE_FENCE, modBlocks.TERMINITE_BLOCK);
         wallItem(modBlocks.TERMINITE_WALL, modBlocks.TERMINITE_BLOCK);
 
+
+        buttonItem(modBlocks.BLOODWOOD_BUTTON, modBlocks.BLOODWOOD_PLANKS);
+        fenceItem(modBlocks.BLOODWOOD_FENCE, modBlocks.BLOODWOOD_PLANKS);
+        wallItem(modBlocks.BLOODWOOD_WALL, modBlocks.BLOODWOOD_PLANKS);
+        buttonItem(modBlocks.DRIFTWOOD_BUTTON, modBlocks.DRIFTWOOD_PLANKS);
+        fenceItem(modBlocks.DRIFTWOOD_FENCE, modBlocks.DRIFTWOOD_PLANKS);
+        wallItem(modBlocks.DRIFTWOOD_WALL, modBlocks.DRIFTWOOD_PLANKS);
+        buttonItem(modBlocks.EUCALYPTUS_BUTTON, modBlocks.EUCALYPTUS_PLANKS);
+        fenceItem(modBlocks.EUCALYPTUS_FENCE, modBlocks.EUCALYPTUS_PLANKS);
+        wallItem(modBlocks.EUCALYPTUS_WALL, modBlocks.EUCALYPTUS_PLANKS);
+
+
+
+
         buttonItem(modBlocks.THALLIUM_BUTTON, modBlocks.THALLIUM_BLOCK);
         fenceItem(modBlocks.THALLIUM_FENCE, modBlocks.THALLIUM_BLOCK);
         wallItem(modBlocks.THALLIUM_WALL, modBlocks.THALLIUM_BLOCK);
 
         simpleBlockItem(modBlocks.TERMINITE_DOOR);
         simpleBlockItem(modBlocks.THALLIUM_DOOR);
+        simpleBlockItem(modBlocks.BLOODWOOD_DOOR);
+        simpleBlockItem(modBlocks.DRIFTWOOD_DOOR);
+        simpleBlockItem(modBlocks.EUCALYPTUS_DOOR);
 
-        simpleBlockItem(modBlocks.TERMINITE_TRAP_DOOR);
-        simpleBlockItem(modBlocks.THALLIUM_TRAP_DOOR);
+
 
 
         handheldItem(modItems.HAMMER);
@@ -108,6 +125,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(modItems.THALLIUM_BOOTS);
 
 
+        saplingItem(modBlocks.EUCALYPTUS_SAPLING);
+        saplingItem(modBlocks.DRIFTWOOD_SAPLING);
+        saplingItem(modBlocks.BLOODWOOD_SAPLING);
+
+    }
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID,"block/" + item.getId().getPath()));
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = ExampleMod.MOD_ID; // Change this to your mod id
@@ -193,20 +219,10 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
 
-    public void simpleBlockItem(RegistryObject<? extends Block> block) {
-        String path = block.getId().getPath();
-        String namespace = block.getId().getNamespace();
-
-        // For most blocks, the texture is in the block folder
-        String texturePath = "block/" + path;
-
-        // Special case for doors, which typically have textures in the item folder
-        if (path.contains("door")) {
-            texturePath = "item/" + path;
-        }
-
-        withExistingParent(path, mcLoc("item/generated"))
-                .texture("layer0", ResourceLocation.fromNamespaceAndPath(namespace, texturePath));
+    private ItemModelBuilder simpleBlockItem(RegistryObject<? extends Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
 }

@@ -49,6 +49,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(modBlocks.TERMINITE_PRESSURE_PLATE.get());
         dropSelf(modBlocks.TERMINITE_TRAP_DOOR.get());
         dropSelf(modBlocks.TERMINITE_FENCE_GATE.get());
+
         this.add(modBlocks.TERMINITE_SLAB.get(),
                 block -> createSlabItemTable(modBlocks.TERMINITE_SLAB.get()));
 
@@ -63,6 +64,63 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(modBlocks.THALLIUM_PRESSURE_PLATE.get());
         dropSelf(modBlocks.THALLIUM_STAIRS.get());
 
+        dropSelf(modBlocks.BLOODWOOD_BUTTON.get());
+        dropSelf(modBlocks.BLOODWOOD_FENCE.get());
+        dropSelf(modBlocks.BLOODWOOD_FENCE_GATE.get());
+        dropSelf(modBlocks.BLOODWOOD_WALL.get());
+        dropSelf(modBlocks.BLOODWOOD_TRAP_DOOR.get());
+        dropSelf(modBlocks.BLOODWOOD_PRESSURE_PLATE.get());
+        dropSelf(modBlocks.BLOODWOOD_STAIRS.get());
+
+        dropSelf(modBlocks.DRIFTWOOD_BUTTON.get());
+        dropSelf(modBlocks.DRIFTWOOD_FENCE.get());
+        dropSelf(modBlocks.DRIFTWOOD_FENCE_GATE.get());
+        dropSelf(modBlocks.DRIFTWOOD_WALL.get());
+        dropSelf(modBlocks.DRIFTWOOD_TRAP_DOOR.get());
+        dropSelf(modBlocks.DRIFTWOOD_PRESSURE_PLATE.get());
+        dropSelf(modBlocks.DRIFTWOOD_STAIRS.get());
+
+        dropSelf(modBlocks.EUCALYPTUS_BUTTON.get());
+        dropSelf(modBlocks.EUCALYPTUS_FENCE.get());
+        dropSelf(modBlocks.EUCALYPTUS_FENCE_GATE.get());
+        dropSelf(modBlocks.EUCALYPTUS_WALL.get());
+        dropSelf(modBlocks.EUCALYPTUS_TRAP_DOOR.get());
+        dropSelf(modBlocks.EUCALYPTUS_PRESSURE_PLATE.get());
+        dropSelf(modBlocks.EUCALYPTUS_STAIRS.get());
+
+        this.dropSelf(modBlocks.EUCALYPTUS_SAPLING.get());
+        this.dropSelf(modBlocks.EUCALYPTUS_LOG.get());
+        this.dropSelf(modBlocks.STRIPPED_EUCALYPTUS_LOG.get());
+        this.dropSelf(modBlocks.EUCALYPTUS_WOOD.get());
+        this.dropSelf(modBlocks.STRIPPED_EUCALYPTUS_WOOD.get());
+        this.dropSelf(modBlocks.EUCALYPTUS_PLANKS.get());
+
+
+        this.add(modBlocks.EUCALYPTUS_LEAVES.get(),
+                block -> createLeavesDrops(block, modBlocks.EUCALYPTUS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.dropSelf(modBlocks.DRIFTWOOD_SAPLING.get());
+        this.dropSelf(modBlocks.DRIFTWOOD_LOG.get());
+        this.dropSelf(modBlocks.STRIPPED_DRIFTWOOD_LOG.get());
+        this.dropSelf(modBlocks.DRIFTWOOD_WOOD.get());
+        this.dropSelf(modBlocks.STRIPPED_DRIFTWOOD_WOOD.get());
+        this.dropSelf(modBlocks.DRIFTWOOD_PLANKS.get());
+
+
+        this.add(modBlocks.DRIFTWOOD_LEAVES.get(),
+                block -> createLeavesDrops(block, modBlocks.DRIFTWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.dropSelf(modBlocks.BLOODWOOD_SAPLING.get());
+        this.dropSelf(modBlocks.BLOODWOOD_LOG.get());
+        this.dropSelf(modBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        this.dropSelf(modBlocks.BLOODWOOD_WOOD.get());
+        this.dropSelf(modBlocks.STRIPPED_BLOODWOOD_WOOD.get());
+        this.dropSelf(modBlocks.BLOODWOOD_PLANKS.get());
+
+
+        this.add(modBlocks.BLOODWOOD_LEAVES.get(),
+                block -> createLeavesDrops(block, modBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
         dropSelf(modBlocks.THALLIUM_LAMP.get());
         dropSelf(modBlocks.TERMINITE_LAMP.get());
 
@@ -70,6 +128,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createSlabItemTable(modBlocks.THALLIUM_SLAB.get()));
         this.add(modBlocks.THALLIUM_DOOR.get(),
                 block -> createDoorTable(modBlocks.THALLIUM_DOOR.get()));
+
+        this.add(modBlocks.BLOODWOOD_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.BLOODWOOD_SLAB.get()));
+        this.add(modBlocks.BLOODWOOD_DOOR.get(),
+                block -> createDoorTable(modBlocks.BLOODWOOD_DOOR.get()));
+        this.add(modBlocks.DRIFTWOOD_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.DRIFTWOOD_SLAB.get()));
+        this.add(modBlocks.DRIFTWOOD_DOOR.get(),
+                block -> createDoorTable(modBlocks.DRIFTWOOD_DOOR.get()));
+        this.add(modBlocks.EUCALYPTUS_SLAB.get(),
+                block -> createSlabItemTable(modBlocks.EUCALYPTUS_SLAB.get()));
+        this.add(modBlocks.EUCALYPTUS_DOOR.get(),
+                block -> createDoorTable(modBlocks.EUCALYPTUS_DOOR.get()));
 
 
         this.add(modBlocks.TERMINITE_ORE.get(),

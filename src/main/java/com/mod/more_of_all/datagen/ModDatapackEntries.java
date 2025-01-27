@@ -7,6 +7,7 @@ import com.mod.more_of_all.trim.ModTrimPatterns;
 import com.mod.more_of_all.worldgen.ModBiomeModifiers;
 import com.mod.more_of_all.worldgen.ModConfiguredFeatures;
 import com.mod.more_of_all.worldgen.ModPlacedFeatures;
+
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -25,6 +26,7 @@ public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
 
     public ModDatapackEntries(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(ExampleMod.MOD_ID));
