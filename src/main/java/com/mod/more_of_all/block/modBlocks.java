@@ -229,7 +229,7 @@ public class modBlocks {
                 }
             });
     public static final RegistryObject<Block> DRIFTWOOD_SAPLING = registryBlock("driftwood_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.DRIFTWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new ModSaplingBlock(ModTreeGrowers.DRIFTWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE));
 
     public static final RegistryObject<RotatedPillarBlock> BLOODWOOD_LOG = registryBlock("bloodwood_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
@@ -275,7 +275,7 @@ public class modBlocks {
                 }
             });
     public static final RegistryObject<Block> BLOODWOOD_SAPLING = registryBlock("bloodwood_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new ModSaplingBlockBloodwood(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), () -> Blocks.NETHERRACK));
 
 
 

@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -60,19 +61,29 @@ public class ModConfiguredFeatures {
 
         register(context, BLOODWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(modBlocks.BLOODWOOD_LOG.get()),
-                new ForkingTrunkPlacer(4, 4, 3),
+                new ForkingTrunkPlacer(5, 2, 2),
                 BlockStateProvider.simple(modBlocks.BLOODWOOD_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build()
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .dirt(BlockStateProvider.simple(Blocks.NETHERRACK))
+                .dirt(BlockStateProvider.simple(Blocks.SOUL_SAND))
+                .dirt(BlockStateProvider.simple(Blocks.SOUL_SOIL))
+                .forceDirt()
+                .ignoreVines()
+                .build()
         );
+
+
+
         register(context, DRIFTWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(modBlocks.DRIFTWOOD_LOG.get()),
-                new ForkingTrunkPlacer(4, 4, 3),
+                new ForkingTrunkPlacer(5, 2, 2),
                 BlockStateProvider.simple(modBlocks.DRIFTWOOD_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build()
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .dirt(BlockStateProvider.simple(Blocks.END_STONE))
+                .forceDirt()
+                .build()
         );
 
 

@@ -53,7 +53,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.TERMINITE_SLAB);
         blockItem(modBlocks.TERMINITE_FENCE_GATE);
         blockItem(modBlocks.TERMINITE_PRESSURE_PLATE);
-        blockItem(modBlocks.TERMINITE_TRAP_DOOR, "bottom");
+        blockItem(modBlocks.TERMINITE_TRAP_DOOR, "_bottom");
 
 
 
@@ -74,7 +74,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.THALLIUM_SLAB);
         blockItem(modBlocks.THALLIUM_FENCE_GATE);
         blockItem(modBlocks.THALLIUM_PRESSURE_PLATE);
-        blockItem(modBlocks.THALLIUM_TRAP_DOOR, "bottom");
+        blockItem(modBlocks.THALLIUM_TRAP_DOOR, "_bottom");
 
 
 
@@ -165,7 +165,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.BLOODWOOD_SLAB);
         blockItem(modBlocks.BLOODWOOD_FENCE_GATE);
         blockItem(modBlocks.BLOODWOOD_PRESSURE_PLATE);
-        blockItem(modBlocks.BLOODWOOD_TRAP_DOOR, "bottom");
+        blockItem(modBlocks.BLOODWOOD_TRAP_DOOR, "_bottom");
 
 
 
@@ -186,7 +186,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.DRIFTWOOD_SLAB);
         blockItem(modBlocks.DRIFTWOOD_FENCE_GATE);
         blockItem(modBlocks.DRIFTWOOD_PRESSURE_PLATE);
-        blockItem(modBlocks.DRIFTWOOD_TRAP_DOOR, "bottom");
+        blockItem(modBlocks.DRIFTWOOD_TRAP_DOOR, "_bottom");
 
 
 
@@ -207,7 +207,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(modBlocks.EUCALYPTUS_SLAB);
         blockItem(modBlocks.EUCALYPTUS_FENCE_GATE);
         blockItem(modBlocks.EUCALYPTUS_PRESSURE_PLATE);
-        blockItem(modBlocks.EUCALYPTUS_TRAP_DOOR, "bottom");
+        blockItem(modBlocks.EUCALYPTUS_TRAP_DOOR, "_bottom");
 
 
 

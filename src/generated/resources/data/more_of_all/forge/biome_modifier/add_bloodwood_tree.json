@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:nether_wastes",
+    "minecraft:soul_sand_valley"
+  ],
+  "features": "more_of_all:bloodwood_placed",
+  "step": "vegetal_decoration"
+}

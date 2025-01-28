@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-26T20:18:50.0381364	Block States: more_of_all
+// 1.21.1	2025-01-27T17:09:18.9112029	Block States: more_of_all
 63bde6be538b5883533d43d6ab0a29641ae9e650 assets/more_of_all/blockstates/bloodwood_button.json
 6ab8aab59ca6ff26bddac1e67d9bc8712dcb390e assets/more_of_all/blockstates/bloodwood_door.json
 c1713d49208f9c0ba03646fcb5d31af9b9157414 assets/more_of_all/blockstates/bloodwood_fence.json
@@ -282,7 +282,7 @@ d52f859c4729c871b1ab2061d9a14c8fefe017cb assets/more_of_all/models/item/bloodwoo
 62672147e4a00d116c8dd646a5e1c9043fa4e2c8 assets/more_of_all/models/item/bloodwood_pressure_plate.json
 81e0a3cf4267d7fee93f3963f531f102c4a2883e assets/more_of_all/models/item/bloodwood_slab.json
 d3e0898943d1525b1068db9baf594f5af7ac38aa assets/more_of_all/models/item/bloodwood_stairs.json
-0d888c523d401157f139a065cdbba17855079f79 assets/more_of_all/models/item/bloodwood_trapdoor.json
+734fecbe2ec5211c6c657a09ad33ab0739849883 assets/more_of_all/models/item/bloodwood_trapdoor.json
 6ec9ae122c7f566e70e0fb341fc09cf0b6cd40b9 assets/more_of_all/models/item/bloodwood_wood.json
 3601d5294cd4e5a7f40b2f46873ea7311af35b99 assets/more_of_all/models/item/deepslate_terminite_ore.json
 58c43a3f244d764fe86989731a73a50d66bdceab assets/more_of_all/models/item/deepslate_thallium_ore.json
@@ -293,7 +293,7 @@ da5404d71fd7f508a457052ff1288008aee05de5 assets/more_of_all/models/item/driftwoo
 a8932a37ef234737ad1c6ede6d60e2366cf7800e assets/more_of_all/models/item/driftwood_pressure_plate.json
 068c81ea6467008f6a4bb35d241a3b8c98b3b0f8 assets/more_of_all/models/item/driftwood_slab.json
 374991607e05cf86ef7cc9d87037c09dcd0a1792 assets/more_of_all/models/item/driftwood_stairs.json
-d2a95d115829e27e5d32b7834b89dafc0d3259f3 assets/more_of_all/models/item/driftwood_trapdoor.json
+8092386fdd615000a120cabe5f00df37fd57b687 assets/more_of_all/models/item/driftwood_trapdoor.json
 39a4897a7ccab9b3b72599d12d553ecb6bd5d294 assets/more_of_all/models/item/driftwood_wood.json
 41f5f6480f4d709040453d6f0a9cd85967afb701 assets/more_of_all/models/item/eucalyptus_fence_gate.json
 37a97a2288f8e9aacdf516b6ac9c31db2ed49b77 assets/more_of_all/models/item/eucalyptus_leaves.json
@@ -302,7 +302,7 @@ d972d3399890e5cd20673e08442b731614edad1a assets/more_of_all/models/item/eucalypt
 f1c1fc7ab5987980028b83f77b48009c4292a69b assets/more_of_all/models/item/eucalyptus_pressure_plate.json
 a1912161d9889517a4611fd893329a6bfc9778dc assets/more_of_all/models/item/eucalyptus_slab.json
 61e7aae28ddf63b37cff28f4fb849cf523410c6d assets/more_of_all/models/item/eucalyptus_stairs.json
-15af59979715716a3322e510ed40e13f5b711ddb assets/more_of_all/models/item/eucalyptus_trapdoor.json
+59322c242365861a40c6348804410a36f07cb84e assets/more_of_all/models/item/eucalyptus_trapdoor.json
 02a35f68e40bb5092bb6d483e6802c43b2f571cb assets/more_of_all/models/item/eucalyptus_wood.json
 ca8fdabb31995657518966e7f23ee4c49bb0c13c assets/more_of_all/models/item/raw_terminite_block.json
 bab4b1a0d1573eaccc673c0b47ecfcb893579e0f assets/more_of_all/models/item/salvager.json
@@ -319,7 +319,7 @@ c291cb65dc091979eb28cf5c76d0a87793f09ee5 assets/more_of_all/models/item/terminit
 3742ece03b4ffe7c1635240e7069f229f3849e26 assets/more_of_all/models/item/terminite_pressure_plate.json
 9f5c46ca4b6fd183d919894ad5e4a32a8dedfb17 assets/more_of_all/models/item/terminite_slab.json
 4e336e9734b9894641a41ecab0da21d507da9b1d assets/more_of_all/models/item/terminite_stairs.json
-e38eeb38fb7dd200cb81a7e9038e7ff3e7c4396b assets/more_of_all/models/item/terminite_trapdoor.json
+1d240349f8dc7c9bec441b98b9fbbd467c1d66cc assets/more_of_all/models/item/terminite_trapdoor.json
 72972010db2d87ea961d6dbf04b8c7c8093646a2 assets/more_of_all/models/item/thallium_block.json
 47d15e1d46398b639bdbafb080fa6d49108e390a assets/more_of_all/models/item/thallium_fence_gate.json
 1a4072408c72586f644eae4199656796be3600b1 assets/more_of_all/models/item/thallium_lamp.json
@@ -327,4 +327,4 @@ e38eeb38fb7dd200cb81a7e9038e7ff3e7c4396b assets/more_of_all/models/item/terminit
 61e8eb136bb0ee863b245b0a461aded126dd81b1 assets/more_of_all/models/item/thallium_pressure_plate.json
 513cf7397adcc273ac23f740014121ec76a59631 assets/more_of_all/models/item/thallium_slab.json
 754b9fefd0393683f75f0f2f2ac9ad29ea1b4cd2 assets/more_of_all/models/item/thallium_stairs.json
-de0b9a80d77fb0d8469edcdb4c2a7afeffff400d assets/more_of_all/models/item/thallium_trapdoor.json
+b395174808e72eff88910a40f4933a76ea59363f assets/more_of_all/models/item/thallium_trapdoor.json
