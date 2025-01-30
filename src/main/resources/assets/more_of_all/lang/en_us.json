@@ -55,6 +55,14 @@
   "block.more_of_all.driftwood_door": "Driftwood Door",
   "block.more_of_all.driftwood_trapdoor": "Driftwood Trapdoor",
 
+  "item.more_of_all.capybara_spawn_egg": "Capybara Spawn Egg",
+  "entity.more_of_all.capybara": "Capybara",
+  
+  "item.more_of_all.giraffe_spawn_egg": "Giraffe Spawn Egg",
+  "entity.more_of_all.giraffe": "Giraffe",
+  "item.more_of_all.penguin_spawn_egg": "Penguin Spawn Egg",
+  "entity.more_of_all.penguin": "Penguin",
+
   "block.more_of_all.eucalyptus_stairs": "Eucalyptus Stairs",
   "block.more_of_all.eucalyptus_slab": "Eucalyptus Slab",
   "block.more_of_all.eucalyptus_button": "Eucalyptus Button",

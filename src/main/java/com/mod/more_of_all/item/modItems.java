@@ -3,9 +3,11 @@ package com.mod.more_of_all.item;
 
 import com.mod.more_of_all.ExampleMod;
 import com.mod.more_of_all.block.modBlocks;
+import com.mod.more_of_all.entity.ModEntities;
 import com.mod.more_of_all.item.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -116,10 +118,20 @@ public class modItems {
   public static final RegistryObject<Item> TERMINITE_BOOTS = ITEMS.register("terminite_boots",
           () -> new ArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                   new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))));
+  public static final RegistryObject<Item> PENGUIN_SPAWN_EGG = ITEMS.register("penguin_spawn_egg",
+          () -> new ForgeSpawnEggItem(ModEntities.PENGUIN, 0xdebd47, 0xccbfbe,
+                  new Item.Properties()));
 
 
   public static final RegistryObject<Item> CHILI_SEEDS = ITEMS.register("chili_seeds",
           () -> new ItemNameBlockItem(modBlocks.CHILI_CROP.get(), new Item.Properties()));
+  public static final RegistryObject<Item> CAPYBARA_SPAWN_EGG = ITEMS.register("capybara_spawn_egg",
+          () -> new ForgeSpawnEggItem(ModEntities.CAPYBARA,0x664216, 0xdeab1f,
+                  new Item.Properties()));
+
+  public static final RegistryObject<Item> GIRAFFE_SPAWN_EGG = ITEMS.register("giraffe_spawn_egg",
+          () -> new ForgeSpawnEggItem(ModEntities.GIRAFFE,0x7e5b41, 0x7e5b41,
+                  new Item.Properties()));
 
 
   public static final RegistryObject<Item> THALLIUM_HELMET = ITEMS.register("thallium_helmet",

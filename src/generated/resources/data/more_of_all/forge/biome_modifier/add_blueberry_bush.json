@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:taiga",
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:snowy_taiga",
+    "minecraft:old_growth_spruce_taiga"
+  ],
+  "features": "more_of_all:blueberry_bush_placed",
+  "step": "vegetal_decoration"
+}

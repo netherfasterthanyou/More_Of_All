@@ -26,6 +26,7 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> DRIFTWOOD_PLACED_KEY = registerKey("driftwood_placed");
     public static final ResourceKey<PlacedFeature> EUCALYPTUS_PLACED_KEY = registerKey("eucalyptus_placed");
+    public static final ResourceKey<PlacedFeature> BLUE_BERRY_PLACED_KEY = registerKey("blueberry_bush_placed");
 
 
 
@@ -37,7 +38,8 @@ public class ModPlacedFeatures {
 
         register(context, BLOODWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLOODWOOD_KEY),
                 List.of(
-                        CountPlacement.of(6),
+                        PlacementUtils.countExtra(8, 0.1f, 2),
+
                         InSquarePlacement.spread(),
                         PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
                         EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.solid(), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
@@ -45,6 +47,9 @@ public class ModPlacedFeatures {
                         BiomeFilter.biome()
                 )
         );
+
+        register(context, BLUE_BERRY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUE_BERRY_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
 
 

@@ -3,6 +3,7 @@ package com.mod.more_of_all;
 import com.mod.more_of_all.block.modBlocks;
 import com.mod.more_of_all.effect.ModEffects;
 import com.mod.more_of_all.enchantment.ModEnchantmentEffect;
+import com.mod.more_of_all.entity.ModEntities;
 import com.mod.more_of_all.item.modItems;
 import com.mod.more_of_all.potion.ModPotions;
 
@@ -55,6 +56,7 @@ public class ExampleMod
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantmentEffect.register(modEventBus);
+        ModEntities.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -93,7 +95,11 @@ public class ExampleMod
 
         }
 
-
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS){
+            event.accept(modItems.CAPYBARA_SPAWN_EGG);
+            event.accept(modItems.GIRAFFE_SPAWN_EGG);
+            event.accept(modItems.PENGUIN_SPAWN_EGG);
+        }
 
 
 

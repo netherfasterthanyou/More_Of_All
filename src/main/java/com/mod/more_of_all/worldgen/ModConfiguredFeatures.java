@@ -1,9 +1,11 @@
 package com.mod.more_of_all.worldgen;
 
 import com.mod.more_of_all.ExampleMod;
+import com.mod.more_of_all.block.custom.BlueBerryBushBlock;
 import com.mod.more_of_all.block.modBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -30,6 +33,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> EUCALYPTUS_KEY = registerKey("eucalyptus");
     public static final ResourceKey<ConfiguredFeature<?,?>> BLOODWOOD_KEY = registerKey("bloodwood");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_BERRY_KEY = registerKey("blue_berry");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -85,6 +89,16 @@ public class ModConfiguredFeatures {
                 .forceDirt()
                 .build()
         );
+
+
+        register(context, BLUE_BERRY_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(
+                        Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(
+                                BlockStateProvider.simple(modBlocks.BLUEBERRY_BUSH.get()
+                                        .defaultBlockState().setValue(BlueBerryBushBlock.AGE, 3))
+                        ), List.of(Blocks.GRASS_BLOCK)
+                ));
 
 
     }

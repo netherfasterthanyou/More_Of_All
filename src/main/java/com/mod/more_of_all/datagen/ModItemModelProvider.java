@@ -84,6 +84,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(modBlocks.EUCALYPTUS_BUTTON, modBlocks.EUCALYPTUS_PLANKS);
         fenceItem(modBlocks.EUCALYPTUS_FENCE, modBlocks.EUCALYPTUS_PLANKS);
         wallItem(modBlocks.EUCALYPTUS_WALL, modBlocks.EUCALYPTUS_PLANKS);
+        withExistingParent(modItems.CAPYBARA_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
+        withExistingParent(modItems.GIRAFFE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(modItems.PENGUIN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
 
 

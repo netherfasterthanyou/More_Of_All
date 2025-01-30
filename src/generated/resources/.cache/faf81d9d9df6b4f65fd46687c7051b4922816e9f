@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-26T20:18:50.036133	Item Models: more_of_all
+// 1.21.1	2025-01-29T19:09:43.4061016	Item Models: more_of_all
 ec86424f2576787433a0664d7ce069c6dd9438c5 assets/more_of_all/models/item/blackstone_chisel.json
 26d10ed72d4141ac8ad6bb89fe3eba51b0b8c654 assets/more_of_all/models/item/bloodwood_button.json
 ed468daf22203b577e7260a832785dc7729640d5 assets/more_of_all/models/item/bloodwood_door.json
@@ -6,6 +6,7 @@ f0e1f4c1f93fd205c05d0812d14d49569afdefaf assets/more_of_all/models/item/bloodwoo
 31190397c2afe3ba140490a0ee0d53018f05b15c assets/more_of_all/models/item/bloodwood_sapling.json
 fc51dd0eb91b15ce6ccc28cda767d0bd5eee1787 assets/more_of_all/models/item/bloodwood_wall.json
 98d602eb463db6fc7b01a2ad08b606c2048219e3 assets/more_of_all/models/item/blueberries.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/more_of_all/models/item/capybara_spawn_egg.json
 e56b53544080fe1cbac0f821113e344eef634bd3 assets/more_of_all/models/item/chainsaw.json
 48e3b47b0a11dc0feda8cf573b57e4efd88a83a8 assets/more_of_all/models/item/chili.json
 19f528a666a880559eede0c2169a83c0031f06e5 assets/more_of_all/models/item/chili_seeds.json
@@ -22,8 +23,10 @@ bdb983edd9181c11529aadbfff390ed455adea8c assets/more_of_all/models/item/driftwoo
 f87dbb3617d23b01fe5fdf678401f0bbfbc222b3 assets/more_of_all/models/item/eucalyptus_fence.json
 72b20a501fdfd7d5058c4bf345e5c8eba1a91bb5 assets/more_of_all/models/item/eucalyptus_sapling.json
 26d9054498117cd93d6eb6bb20255919f56e5126 assets/more_of_all/models/item/eucalyptus_wall.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/more_of_all/models/item/giraffe_spawn_egg.json
 9dd60c3799f99d96b63dd2989ba5992ca466bb4c assets/more_of_all/models/item/hammer.json
 971fa26423e095ab3512bc82411906c87a9ecb5a assets/more_of_all/models/item/nether_brick_chisel.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/more_of_all/models/item/penguin_spawn_egg.json
 671670f3d671ebe962f751ca2fec30a71509aff5 assets/more_of_all/models/item/prismarine_chisel.json
 9218c4cee44670f191d497de203a2baf91c345bb assets/more_of_all/models/item/raw_terminite.json
 96c9be63e6ebf53ff5005a27fea82d9aa44060c5 assets/more_of_all/models/item/rayminer.json
