@@ -2,24 +2,27 @@ package com.mod.more_of_all.worldgen;
 
 import com.mod.more_of_all.ExampleMod;
 import com.mod.more_of_all.block.custom.BlueBerryBushBlock;
+import com.mod.more_of_all.block.custom.ChiliCropBlock;
 import com.mod.more_of_all.block.modBlocks;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
@@ -34,6 +37,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> BLOODWOOD_KEY = registerKey("bloodwood");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_BERRY_KEY = registerKey("blue_berry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHILI_KEY = registerKey("chili");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -99,6 +103,30 @@ public class ModConfiguredFeatures {
                                         .defaultBlockState().setValue(BlueBerryBushBlock.AGE, 3))
                         ), List.of(Blocks.GRASS_BLOCK)
                 ));
+
+        register(context, CHILI_KEY, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(
+                        16,
+                        4,
+                        2,
+                        PlacementUtils.filtered(
+                                Feature.SIMPLE_BLOCK,
+                                new SimpleBlockConfiguration(
+                                        new RandomizedIntStateProvider(
+                                                BlockStateProvider.simple(modBlocks.CHILI_CROP.get()),
+                                                ChiliCropBlock.AGE,
+                                                UniformInt.of(0, 3)
+                                        )
+                                ),
+                                BlockPredicate.allOf(
+                                        BlockPredicate.ONLY_IN_AIR_PREDICATE,
+                                        BlockPredicate.matchesBlocks(
+                                                List.of(Blocks.GRASS_BLOCK, Blocks.FARMLAND)
+                                        )
+                                )
+                        )
+                )
+        );
 
 
     }

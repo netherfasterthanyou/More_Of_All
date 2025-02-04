@@ -169,6 +169,9 @@ public class modItems {
           () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "track")));
 
 
+  public static final RegistryObject<Item> THROWING_AXE = ITEMS.register("throwing_axe",
+          () -> new ThrowingAxeItem(new Item.Properties().stacksTo(16)));
+
   public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);
   }

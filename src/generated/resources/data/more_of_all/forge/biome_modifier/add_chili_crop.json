@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:forest"
+  ],
+  "features": "more_of_all:chili_placed",
+  "step": "vegetal_decoration"
+}

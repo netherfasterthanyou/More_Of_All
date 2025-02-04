@@ -24,6 +24,7 @@ public class ModEventBusEvents {
 
         event.registerLayerDefinition(ModModelLayers.GIRAFFE, GiraffeModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.PENGUIN, PenguinModel::createBodyLayer);
+        event.registerLayerDefinition(ThrowingAxeProjectileModel.LAYER_LOCATION, ThrowingAxeProjectileModel::createBodyLayer);
 
 
     }

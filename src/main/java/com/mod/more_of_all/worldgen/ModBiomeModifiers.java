@@ -24,6 +24,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_DRIFTWOOD_TREE = registerKey("add_driftwood_tree");
     public static final ResourceKey<BiomeModifier> ADD_EUCALYPTUS_TREE = registerKey("add_eucalyptus_tree");
     public static final ResourceKey<BiomeModifier> ADD_BLUEBERRY_BUSH = registerKey("add_blueberry_bush");
+    public static final ResourceKey<BiomeModifier> ADD_CHILI_CROP = registerKey("add_chili_crop");
     public static final ResourceKey<BiomeModifier> SPAWN_CAPYBARA = registerKey("spawn_capybara");
     public static final ResourceKey<BiomeModifier> SPAWN_GIRAFFE = registerKey("spawn_giraffe");
     public static final ResourceKey<BiomeModifier> SPAWN_PENGUIN = registerKey("spawn_penguin");
@@ -65,6 +66,11 @@ public class ModBiomeModifiers {
                         biomes.getOrThrow(Biomes.OLD_GROWTH_PINE_TAIGA),
                         biomes.getOrThrow(Biomes.SNOWY_TAIGA), biomes.getOrThrow(Biomes.OLD_GROWTH_SPRUCE_TAIGA)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.BLUE_BERRY_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CHILI_CROP, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.FOREST)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.CHILI_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
 

@@ -26,6 +26,7 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> DRIFTWOOD_PLACED_KEY = registerKey("driftwood_placed");
     public static final ResourceKey<PlacedFeature> EUCALYPTUS_PLACED_KEY = registerKey("eucalyptus_placed");
+    public static final ResourceKey<PlacedFeature> CHILI_PLACED_KEY = registerKey("chili_placed");
     public static final ResourceKey<PlacedFeature> BLUE_BERRY_PLACED_KEY = registerKey("blueberry_bush_placed");
 
 
@@ -52,6 +53,14 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
 
+        register(context, CHILI_PLACED_KEY,
+                context.lookup(Registries.CONFIGURED_FEATURE).getOrThrow(ModConfiguredFeatures.CHILI_KEY),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(10),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP_TOP_SOLID,
+                        BiomeFilter.biome()
+                ));
 
 
 

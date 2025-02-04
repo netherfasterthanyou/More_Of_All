@@ -44,7 +44,7 @@ public record LifeStealEnchant() implements EnchantmentEntityEffect {
 
             if (level > 0) {
                 float damage = event.getAmount();
-                float healAmount = damage * 0.1f * level;
+                float healAmount = damage * 0.08f * level;
                 player.heal(healAmount);
             }
         }

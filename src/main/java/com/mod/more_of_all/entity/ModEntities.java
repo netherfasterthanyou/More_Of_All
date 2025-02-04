@@ -7,6 +7,7 @@ import com.mod.more_of_all.entity.custom.GiraffeEntity;
 import com.mod.more_of_all.entity.custom.PenguinEntity;
 
 
+import com.mod.more_of_all.entity.custom.ThrowingAxeProjectileEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,11 @@ public class ModEntities {
             ENTITY_TYPES.register("capybara", () -> EntityType.Builder.of(CapybaraEntity::new, MobCategory.CREATURE)
                     .sized(0.5f, 0.4f).build("capybara"));
 
+
+    public static final RegistryObject<EntityType<ThrowingAxeProjectileEntity>> THROWING_AXE =
+            ENTITY_TYPES.register("throwing_axe",
+                    () -> EntityType.Builder.<ThrowingAxeProjectileEntity>of(ThrowingAxeProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 1.15f).build("throwing_axe"));
 
     public static final RegistryObject<EntityType<GiraffeEntity>> GIRAFFE =
             ENTITY_TYPES.register("giraffe", () -> EntityType.Builder.of(GiraffeEntity::new, MobCategory.CREATURE)

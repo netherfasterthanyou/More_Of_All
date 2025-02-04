@@ -33,6 +33,10 @@ import org.slf4j.Logger;
 @Mod(ExampleMod.MOD_ID)
 public class ExampleMod
 {
+
+
+
+
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "more_of_all";
     // Directly reference a slf4j logger
@@ -216,6 +220,7 @@ public class ExampleMod
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(modItems.TERMINITE_SWORD);
+            event.accept(modItems.THROWING_AXE);
             event.accept(modItems.TERMINITE_AXE);
             event.accept(modItems.THALLIUM_SWORD);
             event.accept(modItems.THALLIUM_AXE);
@@ -237,6 +242,7 @@ public class ExampleMod
 
         }
     }
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

@@ -14,7 +14,7 @@ public class ClientSetup {
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             EntityRenderers.register(ModEntities.CAPYBARA.get(), CapybaraRenderer::new);
-
+            EntityRenderers.register(ModEntities.THROWING_AXE.get(), ThrowingAxeProjectileRenderer::new);
             EntityRenderers.register(ModEntities.GIRAFFE.get(), GiraffeRenderer::new);
             EntityRenderers.register(ModEntities.PENGUIN.get(), PenguinRenderer::new);
         });
