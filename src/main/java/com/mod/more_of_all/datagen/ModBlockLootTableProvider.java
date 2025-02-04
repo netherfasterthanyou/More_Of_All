@@ -40,6 +40,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(modBlocks.RAW_TERMINITE_BLOCK.get());
         dropSelf(modBlocks.THALLIUM_BLOCK.get());
         dropSelf(modBlocks.SALVAGER.get());
+        dropSelf(modBlocks.MOA_GILDED_BLACKSTONE.get());
 
 
         dropSelf(modBlocks.TERMINITE_BUTTON.get());

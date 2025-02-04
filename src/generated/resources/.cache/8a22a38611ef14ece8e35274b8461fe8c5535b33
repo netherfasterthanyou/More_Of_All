@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-27T17:09:18.9112029	Block States: more_of_all
+// 1.21.1	2025-02-09T14:04:41.4958629	Block States: more_of_all
 63bde6be538b5883533d43d6ab0a29641ae9e650 assets/more_of_all/blockstates/bloodwood_button.json
 6ab8aab59ca6ff26bddac1e67d9bc8712dcb390e assets/more_of_all/blockstates/bloodwood_door.json
 c1713d49208f9c0ba03646fcb5d31af9b9157414 assets/more_of_all/blockstates/bloodwood_fence.json
@@ -45,6 +45,7 @@ c19cd8d5129e3fe350741aa3d6b5e849bae6a332 assets/more_of_all/blockstates/eucalypt
 f0c6fc1bf7689b8ada2dcf443c78d1483e6fa5d3 assets/more_of_all/blockstates/eucalyptus_trapdoor.json
 396e8500dc40706a7c2fc0ba1e1c76f342ed34f4 assets/more_of_all/blockstates/eucalyptus_wall.json
 b8f2ded5d8f1d4de4253e3d9d02220bb72c888ec assets/more_of_all/blockstates/eucalyptus_wood.json
+96a1a4c92cf6c6e4c12b0ef507ac5e3d23dcd03c assets/more_of_all/blockstates/moa_gilded_blackstone.json
 393ec466f62394af121a2cb18ba43c3e3a981201 assets/more_of_all/blockstates/raw_terminite_block.json
 3f4e68c880df276aefc11b09058e57c453bdebec assets/more_of_all/blockstates/salvager.json
 bdb14fa19f33db2d0bde7430886f3eebb5928f34 assets/more_of_all/blockstates/stripped_bloodwood_log.json
@@ -195,6 +196,7 @@ dc2e0b97db51e9fa86ea742ffc9e23931597751e assets/more_of_all/models/block/eucalyp
 abdccecc99d2069fb0eaa85d672f1b3d94df9f6c assets/more_of_all/models/block/eucalyptus_wall_side_tall.json
 86f475e89f01545eee2c6e15405e142248dc2636 assets/more_of_all/models/block/eucalyptus_wood.json
 e3ab4e87cc7fe533e1f444672fdf318d2c53a202 assets/more_of_all/models/block/eucalyptus_wood_horizontal.json
+40f42091f11430a2515359a64d81936753a57cd9 assets/more_of_all/models/block/moa_gilded_blackstone.json
 f3bb3998043a4c6ff14fe68074a009b1db49628b assets/more_of_all/models/block/raw_terminite_block.json
 8166633475d5ac509ebb16b335d04c721bdee48b assets/more_of_all/models/block/salvager.json
 2c047b5515e2eece87f45ae53b1c8140d6356dd8 assets/more_of_all/models/block/stripped_bloodwood_log.json
@@ -304,6 +306,7 @@ a1912161d9889517a4611fd893329a6bfc9778dc assets/more_of_all/models/item/eucalypt
 61e7aae28ddf63b37cff28f4fb849cf523410c6d assets/more_of_all/models/item/eucalyptus_stairs.json
 59322c242365861a40c6348804410a36f07cb84e assets/more_of_all/models/item/eucalyptus_trapdoor.json
 02a35f68e40bb5092bb6d483e6802c43b2f571cb assets/more_of_all/models/item/eucalyptus_wood.json
+8dfbaeabfe61c0f78282ea61043d4411329a77ef assets/more_of_all/models/item/moa_gilded_blackstone.json
 ca8fdabb31995657518966e7f23ee4c49bb0c13c assets/more_of_all/models/item/raw_terminite_block.json
 bab4b1a0d1573eaccc673c0b47ecfcb893579e0f assets/more_of_all/models/item/salvager.json
 0cf368a5d56ad1739000fc8af8e4e02b6fd4cfac assets/more_of_all/models/item/stripped_bloodwood_log.json

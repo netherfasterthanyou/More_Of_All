@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-26T20:18:50.0421401	Loot Tables
+// 1.21.1	2025-02-09T14:04:41.499864	Loot Tables
 4e62d4676e1a6fef6c0e791a8584e85346368e7c data/more_of_all/loot_table/blocks/bloodwood_button.json
 bae80c7559f1ce29faf9da5df971c001c69dbdbc data/more_of_all/loot_table/blocks/bloodwood_door.json
 4fe2efabd26c97a79bad4de575432f8335681f6d data/more_of_all/loot_table/blocks/bloodwood_fence.json
@@ -45,6 +45,7 @@ c005817267787f4350d53b3b9736ed38e5119398 data/more_of_all/loot_table/blocks/euca
 60c2d22248e66751c3ec240b1f78df6772eb32af data/more_of_all/loot_table/blocks/eucalyptus_trapdoor.json
 353c7e78adc066097c26e0ed5137ec77fef24c74 data/more_of_all/loot_table/blocks/eucalyptus_wall.json
 80e79f79da81b5e932ea04ec367215490bb17edc data/more_of_all/loot_table/blocks/eucalyptus_wood.json
+769cb8762f8c6d5964363c58fa28a0902063a16b data/more_of_all/loot_table/blocks/moa_gilded_blackstone.json
 fcce44793f35641c7ed8da8837960b54de6fee31 data/more_of_all/loot_table/blocks/raw_terminite_block.json
 e509bb8825a9ed99773d95ae0e016b856d2e7e58 data/more_of_all/loot_table/blocks/salvager.json
 6dfa202974157f9ac29702187d32f3ec0b643087 data/more_of_all/loot_table/blocks/stripped_bloodwood_log.json

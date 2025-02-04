@@ -166,6 +166,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(modBlocks.EUCALYPTUS_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_WOOD.get()),
+                        has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput, "eucalyptus_planks_from_wood");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_WOOD.get()),
+                        has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput, "eucalyptus_planks_from_stripped_log");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_EUCALYPTUS_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_WOOD.get()),
+                        has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput,"eucalyptus_planks_from_stripped_wood");
+
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.BLOODWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.BLOODWOOD_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_WOOD.get()),
+                        has(modBlocks.BLOODWOOD_LOG.get())).save(pRecipeOutput, "bloodwood_planks_from_wood");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.BLOODWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_BLOODWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_WOOD.get()),
+                        has(modBlocks.BLOODWOOD_LOG.get())).save(pRecipeOutput, "bloodwood_planks_from_stripped_log");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.BLOODWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_BLOODWOOD_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_WOOD.get()),
+                        has(modBlocks.BLOODWOOD_LOG.get())).save(pRecipeOutput,"bloodwood_planks_from_stripped_wood");
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.DRIFTWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.DRIFTWOOD_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_WOOD.get()),
+                        has(modBlocks.DRIFTWOOD_LOG.get())).save(pRecipeOutput, "driftwood_planks_from_wood");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.DRIFTWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_DRIFTWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_LOG.get()),
+                        has(modBlocks.DRIFTWOOD_LOG.get())).save(pRecipeOutput, "driftwood_planks_from_stripped_log");  // Unique ID
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.DRIFTWOOD_PLANKS.get(), 4)
+                .requires(modBlocks.STRIPPED_DRIFTWOOD_WOOD.get())
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_WOOD.get()),
+                        has(modBlocks.DRIFTWOOD_LOG.get())).save(pRecipeOutput,"driftwood_planks_from_stripped_wood");
+
+
+
+
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
                 .requires(modBlocks.EUCALYPTUS_LOG.get())
                 .unlockedBy(getHasName(modBlocks.EUCALYPTUS_LOG.get()), has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput);
 
@@ -181,6 +237,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.DRIFTWOOD_WOOD.get())
+                .pattern("   ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', modBlocks.DRIFTWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.DRIFTWOOD_LOG.get()), has(modBlocks.DRIFTWOOD_LOG.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.BLOODWOOD_WOOD.get())
+                .pattern("   ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', modBlocks.BLOODWOOD_LOG.get())
+                .unlockedBy(getHasName(modBlocks.BLOODWOOD_LOG.get()), has(modBlocks.BLOODWOOD_LOG.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modBlocks.EUCALYPTUS_WOOD.get())
+                .pattern("   ")
+                .pattern("AA ")
+                .pattern("AA ")
+                .define('A', modBlocks.EUCALYPTUS_LOG.get())
+                .unlockedBy(getHasName(modBlocks.EUCALYPTUS_LOG.get()), has(modBlocks.EUCALYPTUS_LOG.get())).save(pRecipeOutput);
+
 
 
 
@@ -194,7 +269,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TRACK_SMITHING_TEMPLATE.get())
+                .pattern("ASA")
+                .pattern("ATA")
+                .pattern("AAA")
+                .define('A', modItems.THALLIUM.get())
+                .define('S', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .define('T', modItems.TERMINITE.get())
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
 
 
 
@@ -243,9 +325,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" SS")
                 .pattern("XSA")
                 .pattern("XXA")
-                .define('A', Items.DIAMOND)
+                .define('A', Items.GOLD_NUGGET)
                 .define('S', Items.IRON_INGOT)
-                .define('X', Items.YELLOW_CONCRETE)
+                .define('X', Items.GOLD_INGOT)
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.DORMANT_STARLIGHT.get())
@@ -260,7 +342,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.COBBLESTONE)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -269,7 +351,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.PRISMARINE)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -278,7 +360,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.COBBLED_DEEPSLATE)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -287,7 +369,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.NETHER_BRICK)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -297,7 +379,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.BLACKSTONE)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -306,7 +388,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.SAND)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
@@ -315,7 +397,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SA ")
                 .pattern("AX ")
                 .pattern("SA ")
-                .define('X', Items.DIAMOND)
+                .define('X', Items.IRON_INGOT)
                 .define('A', Items.TUFF)
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);

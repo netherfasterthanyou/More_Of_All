@@ -30,6 +30,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(modBlocks.TERMINITE_BLOCK);
         blockWithItem(modBlocks.THALLIUM_BLOCK);
         blockWithItem(modBlocks.THALLIUM_ORE);
+        blockWithItem(modBlocks.MOA_GILDED_BLACKSTONE);
         blockWithItem(modBlocks.DEEPSLATE_TERMINITE_ORE);
         blockWithItem(modBlocks.DEEPSLATE_THALLIUM_ORE);
         blockWithItem(modBlocks.TERMINITE_ORE);

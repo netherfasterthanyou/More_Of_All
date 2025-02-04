@@ -21,6 +21,8 @@ public class ModEnchantmentEffect {
             ENTITY_ENCHANTMENT_EFFECTS.register("fireball", () -> FireballShootEnchant.CODEC);
     public static final RegistryObject<MapCodec<?extends EnchantmentEntityEffect>> TNT_EXPLODE_EFFECT =
             ENTITY_ENCHANTMENT_EFFECTS.register("tnt_explode_effect", () -> TntExplode_effect.CODEC);
+    public static final RegistryObject<MapCodec<?extends EnchantmentEntityEffect>> ARROW_RAIN =
+            ENTITY_ENCHANTMENT_EFFECTS.register("arrow_rain", () -> ArrowRainEnchantmentEffect.CODEC);
 
 
 

@@ -22,8 +22,8 @@ public class ModEnchantments {
             ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "fireball"));
     public static final ResourceKey<Enchantment> TNT_EXPLODE_EFFECT = ResourceKey.create(Registries.ENCHANTMENT,
             ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "tnt_explode_effect"));
-    public static final ResourceKey<Enchantment> FUSE_SHOT = ResourceKey.create(Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "fuse_shot"));
+    public static final ResourceKey<Enchantment> ARROW_RAIN = ResourceKey.create(Registries.ENCHANTMENT,
+            ResourceLocation.fromNamespaceAndPath(ExampleMod.MOD_ID, "arrow_rain"));
 
 
     public static void bootstrap(BootstrapContext<Enchantment> context){
@@ -45,7 +45,19 @@ public class ModEnchantments {
                         EnchantmentTarget.VICTIM, new LightningStrikeEnchantmentEffect()));
 
 
+        register(context, ARROW_RAIN, Enchantment.enchantment(Enchantment.definition(
 
+                        items.getOrThrow(ItemTags.BOW_ENCHANTABLE),
+
+                        2,
+                        5,
+                        Enchantment.dynamicCost(5, 8),
+                        Enchantment.dynamicCost(25, 8),
+                        2,
+                        EquipmentSlotGroup.MAINHAND))
+                .exclusiveWith(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE))
+                .withEffect(EnchantmentEffectComponents.POST_ATTACK, EnchantmentTarget.ATTACKER,
+                        EnchantmentTarget.VICTIM, new ArrowRainEnchantmentEffect()));
 
 
         register(context, TNT_EXPLODE_EFFECT, Enchantment.enchantment(Enchantment.definition(

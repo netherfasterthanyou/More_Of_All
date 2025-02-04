@@ -31,6 +31,9 @@ public class modBlocks {
     public static final RegistryObject<Block> THALLIUM_BLOCK = registryBlock("thallium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> MOA_GILDED_BLACKSTONE = registryBlock("moa_gilded_blackstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.GILDED_BLACKSTONE)));
 
 
     public static final RegistryObject<Block> TERMINITE_BLOCK = registryBlock("terminite_block",

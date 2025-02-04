@@ -1,5 +1,6 @@
 package com.mod.more_of_all.item.custom;
 
+import com.mod.more_of_all.block.modBlocks;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -18,8 +19,8 @@ import java.util.Map;
 public class BlackStoneChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
             Map.of(
-                    Blocks.BLACKSTONE, Blocks.GILDED_BLACKSTONE,
-                    Blocks.GILDED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE_BRICKS,
+                    Blocks.BLACKSTONE, modBlocks.MOA_GILDED_BLACKSTONE.get(),
+                    modBlocks.MOA_GILDED_BLACKSTONE.get(), Blocks.POLISHED_BLACKSTONE_BRICKS,
                     Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,
                     Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE,
                     Blocks.POLISHED_BLACKSTONE, Blocks.CHISELED_POLISHED_BLACKSTONE,

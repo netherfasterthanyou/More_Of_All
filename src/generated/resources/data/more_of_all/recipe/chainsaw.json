@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:gold_nugget"
     },
     "S": {
       "item": "minecraft:iron_ingot"
     },
     "X": {
-      "item": "minecraft:yellow_concrete"
+      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [

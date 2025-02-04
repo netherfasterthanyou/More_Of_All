@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_of_all:thallium"
+    },
+    "S": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "T": {
+      "item": "more_of_all:terminite"
+    }
+  },
+  "pattern": [
+    "ASA",
+    "ATA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_of_all:track_armor_trim_smithing_template"
+  }
+}

@@ -24,6 +24,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(modBlocks.SALVAGER.get())
+                .add(modBlocks.MOA_GILDED_BLACKSTONE.get())
                 .add(modBlocks.RAW_TERMINITE_BLOCK.get())
                 .add(modBlocks.TERMINITE_BLOCK.get())
                 .add(modBlocks.TERMINITE_TRAP_DOOR.get())

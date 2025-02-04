@@ -104,7 +104,7 @@ public class modItems {
 
   public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
           () -> new HammerItem(ModToolTiers.HAMMER, new Item.Properties()
-                  .attributes(AxeItem.createAttributes(ModToolTiers.HAMMER, 8, (float) -3.1))));
+                  .attributes(AxeItem.createAttributes(ModToolTiers.HAMMER, 8, (float) -3.5))));
 
   public static final RegistryObject<Item> TERMINITE_HELMET = ITEMS.register("terminite_helmet",
           () -> new ModArmorItem(ModArmorMaterials.TERMINITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
