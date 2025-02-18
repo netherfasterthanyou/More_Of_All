@@ -163,6 +163,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.THALLIUM_HORSE_ARMOR.get())
+                .pattern(" A ")
+                .pattern("ASA")
+                .pattern(" A ")
+                .define('A', modItems.THALLIUM.get())
+                .define('S', Items.LEATHER_HORSE_ARMOR)
+                .unlockedBy(getHasName(modItems.THALLIUM.get()), has(modItems.THALLIUM.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, modItems.TERMINITE_HORSE_ARMOR.get())
+                .pattern(" A ")
+                .pattern("ASA")
+                .pattern(" A ")
+                .define('A', modItems.TERMINITE.get())
+                .define('S', Items.LEATHER_HORSE_ARMOR)
+                .unlockedBy(getHasName(modItems.TERMINITE.get()), has(modItems.TERMINITE.get())).save(pRecipeOutput);
+
+
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, modBlocks.EUCALYPTUS_PLANKS.get(), 4)
